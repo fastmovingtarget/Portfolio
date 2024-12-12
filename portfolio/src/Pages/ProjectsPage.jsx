@@ -14,11 +14,12 @@ export default function ProjectsPage () {
                 <h4>What I'm working on:</h4>
                 <ul>
                     <li>Portfolio Web Site</li>
+                    <li>Music Notation Learning Web Site</li>
                 </ul>
             </div>
             <div>
                 <h4>My GitHub:</h4>
-                <p></p>
+                <a href="https://github.com/fastmovingtarget">https://github.com/fastmovingtarget</a>
             </div>
         </div>
     )
