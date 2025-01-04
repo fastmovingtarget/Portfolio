@@ -13,7 +13,7 @@ function Employment() {
                 to CAD users like AirBus or NASA.
                 <br/>
                 <br/>
-                Whist working at Theorem I had responsibility for developing the CADViewer visualisation software, which required me to process the geometric data for the various CAD parts being viewed into a format that the viewer library
+                Whist working at Theorem I had responsibility for developing the CADViewer visualisation software, which required me to process the geometric data for the various CAD parts being viewed into a format that the OpenInventor viewer library 
                 could read, and then eventually adding the viewer into an integrated process management program. 
                 <br/>
                 <br/>
