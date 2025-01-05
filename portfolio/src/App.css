@@ -1,5 +1,26 @@
 .App {
   text-align: center;
+  --colour-primary-light  :#3D79D6;
+  --colour-secondary-light:#4D3DD6;
+  --colour-tertiary-light: #3DC6D6;
+  --colour-primary:  #1D4788;
+  --colour-secondary:#281D88;
+  --colour-tertiary: #1D7D88;
+  --colour-primary-hover:  #183C72;
+  --colour-secondary-hover:#221872;
+  --colour-tertiary-hover: #186972;
+  --colour-text:#aaccff;
+  /*--colour-text:#0B1C36;*/
+}
+
+.App-header{
+  margin:0px;
+  padding:0px;
+  .header-image{
+    display:block;
+    width:100%;
+    height:auto;
+  }
 }
 
 .App-logo {
@@ -13,15 +34,15 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.app-body {
+  background-color: var(--colour-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--colour-text);
 }
 
 .App-link {

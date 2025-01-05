@@ -17,7 +17,7 @@ export default function AboutPage () {
             <div>
                 <h4>Summary</h4>
                 <p>Hello, my name is James and I'm a software developer. I graduated University with degrees in Physics and Computer Science, then worked as a Software Developer at Theorem Solutions for 4 years, using C, C++, C#, .NET and Java 
-                    before eventually leaving to give myself oppourtunities to grow as a person. Since then I've moved my skills towards Web Development with Javascript, React and nodejs.
+                    before eventually leaving to give myself opportunities to grow as a person. Since then I've moved my skills towards Web Development with Javascript, React and nodejs.
                 </p>
             </div>
             <div>
