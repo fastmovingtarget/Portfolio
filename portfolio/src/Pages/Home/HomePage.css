@@ -1,0 +1,37 @@
+.page-layout{
+    --colour-secondary-hover:#221872;
+    --colour-secondary:#281D88;
+}
+
+.thumbnail-container{
+    position:relative;
+    border-radius:5px;
+    margin:10px;
+    padding:10px;
+
+    &:hover{
+        filter:brightness(120%);
+        background-color: var(--colour-secondary);
+        video{
+            cursor:pointer;
+        }
+    }
+    .tech-stack-container{
+        display:flex;
+        flex-direction:row;
+        position:absolute;
+        right:0px;
+        p{
+            z-index:3;
+            background-color: var(--colour-secondary-hover);
+            margin:3px;
+            padding:3px;
+            border-radius:3px;
+            opacity:50%;
+            font-size:15px;
+            &:hover{
+                opacity:100%;
+            }
+        }
+    }
+}

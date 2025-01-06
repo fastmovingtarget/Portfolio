@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router";
-import HomePage from "./Pages/HomePage"
+import HomePage from "./Pages/Home/HomePage"
 import AboutPage from "./Pages/About/AboutPage"
 import ProjectsPage from "./Pages/Projects/ProjectsPage"
 import EarlyHistory from "./Pages/About/EarlyHistory"
@@ -11,6 +11,7 @@ import Unemployment from "./Pages/About/Unemployment"
 import Retraining from "./Pages/About/Retraining"
 import Hobbies from "./Pages/About/Hobbies"
 import ProjectSummaryPage from "./Pages/Projects/ProjectSummaryPage"
+import BestBeforeStartPage from "./Pages/Projects/BestBeforeStartPage"
 import Layout from './Pages/Layout';
 import './App.css';
 
@@ -34,7 +35,8 @@ function App() {
                         </Route>
                         <Route path="Projects" element={<ProjectsPage />}>
                             <Route index element={<ProjectSummaryPage/>} />
-                            <Route path="ProjectSummaryPage" element={<ProjectSummaryPage/>} />
+                            <Route path="ProjectSummary" element={<ProjectSummaryPage/>} />
+                            <Route path="BestBeforeStart" element={<BestBeforeStartPage/>} />
                         </Route>
                     </Route>
                 </Routes>
