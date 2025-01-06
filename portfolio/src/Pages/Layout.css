@@ -11,11 +11,12 @@
     --colour-secondary-hover:#221872;
     --colour-tertiary-hover: #186972;
     --colour-text:#aaccff;
+    --body-padding:20px;
     /*--colour-text:#0B1C36;*/
   }
 
   .page-body{
-    width:100%;
+    width:calc(100% - var(--body-padding)*2);
   }
 
 .layout-header{
@@ -34,7 +35,7 @@
       display:flex;
       background-color: var(--colour-primary-intermed);
       min-height:100%;
-      padding:20px;
+      padding:var(--body-padding);
     }
     #about-navigation-list, #projects-navigation-list{
       margin-top:5px;

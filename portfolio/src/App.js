@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "./Pages/HomePage"
-import AboutPage from "./Pages/AboutPage"
-import ProjectsPage from "./Pages/ProjectsPage"
-import EarlyHistory from "./Pages/EarlyHistory"
-import AboutSummaryPage from "./Pages/AboutSummaryPage"
-import University from "./Pages/University"
-import Employment from "./Pages/Employment"
-import Unemployment from "./Pages/Unemployment"
-import Retraining from "./Pages/Retraining"
-import Hobbies from "./Pages/Hobbies"
-import ProjectSummaryPage from "./Pages/ProjectSummaryPage"
+import AboutPage from "./Pages/About/AboutPage"
+import ProjectsPage from "./Pages/Projects/ProjectsPage"
+import EarlyHistory from "./Pages/About/EarlyHistory"
+import AboutSummaryPage from "./Pages/About/AboutSummaryPage"
+import University from "./Pages/About/University"
+import Employment from "./Pages/About/Employment"
+import Unemployment from "./Pages/About/Unemployment"
+import Retraining from "./Pages/About/Retraining"
+import Hobbies from "./Pages/About/Hobbies"
+import ProjectSummaryPage from "./Pages/Projects/ProjectSummaryPage"
 import Layout from './Pages/Layout';
 import './App.css';
 
