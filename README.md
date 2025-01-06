@@ -32,4 +32,8 @@ I then tried adding in a Router, which immediately broke the site. During my att
 
 Next Step: Expand the navigation bar to point to different parts of my biography (weird calling it that).
 
-### Day 3 - 
+### Day 3 - 06/01/2025
+
+I've done a lot of routing towards the various sub-pages, now there are nav bars within nav bars. I've also started the process of recording quick demo videos (and I've added the first into Home Page as a thumbnail for my BBSRecipe project)
+
+Next Step: Moar demo videos
