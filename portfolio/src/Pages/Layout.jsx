@@ -6,7 +6,6 @@ function Layout() {
     const navigate = useNavigate();
     const currentPage = useLocation().pathname;
 
-    console.log(currentPage)
     return (
         <div className="Layout">
             <header className="layout-header column">
