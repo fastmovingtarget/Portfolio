@@ -3,6 +3,7 @@
     --colour-primary-light  :#3D79D6;
     --colour-secondary-light:#4D3DD6;
     --colour-tertiary-light: #3DC6D6;
+    --colour-primary-intermed:#2459AB;
     --colour-primary:  #1D4788;
     --colour-secondary:#281D88;
     --colour-tertiary: #1D7D88;
@@ -11,6 +12,10 @@
     --colour-tertiary-hover: #186972;
     --colour-text:#aaccff;
     /*--colour-text:#0B1C36;*/
+  }
+
+  .page-body{
+    width:100%;
   }
 
 .layout-header{
@@ -25,11 +30,26 @@
 
   .page-layout{
     background-color: var(--colour-primary);
+    .sub-page-layout{
+      display:flex;
+      background-color: var(--colour-primary-intermed);
+      min-height:100%;
+      padding:20px;
+    }
+    #about-navigation-list, #projects-navigation-list{
+      margin-top:5px;
+      .nav-element{
+        &.active{
+          background-color: var(--colour-primary-intermed);
+        }
+      }
+    }
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     font-size: calc(10px + 1vmin);
     color: var(--colour-text);
   }
@@ -50,3 +70,27 @@
     font-size: calc(10px + 2vmin);
     color: var(--colour-text);
   }
+
+  .nav-list{
+    display:flex;
+    flex-direction:row;
+    .nav-element{
+      padding:10px;
+      color: #aaccff;
+      &:hover{
+        background-color:var(--colour-primary-hover);
+        cursor:pointer;
+      }
+      &.active{
+          background-color:var(--colour-primary);
+      }
+      p{
+        margin:0px;
+        font-size: 25px;
+        font-weight:bold;
+      }
+    }
+  }
+header{
+  width:100%;
+}

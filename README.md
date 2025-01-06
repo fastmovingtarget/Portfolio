@@ -30,4 +30,6 @@ Wrestled with GIMP for an hour or so to put together a very basic cover/header a
 
 I then tried adding in a Router, which immediately broke the site. During my attempts to fix it I discovered that React had moved up a version in December, which I'm sure will come in handy later. I also discovered that I was an idiot and was using npm install react-router-dom a directory further up than I should have, which lead me to a very quick solution.
 
-Next Step: Expand the navigation bar to point to different parts of my biography (weird calling it that)
+Next Step: Expand the navigation bar to point to different parts of my biography (weird calling it that).
+
+### Day 3 - 

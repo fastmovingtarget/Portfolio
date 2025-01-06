@@ -1,13 +1,8 @@
-import {useState} from 'react';
-
 function Hobbies() {
-
-    const [visible, setVisible] = useState(false)
-
     return (
         <div>
-            <h4 onClick={() => setVisible(!visible)} >Hobbies and Interests</h4>
-            <ul id="hobbies" style={{display:visible ? "block" : "none"}}>
+            <h3 >Hobbies and Interests</h3>
+            <ul id="hobbies" >
                 <li>Reading: I've enjoyed reading for as long as I can remember, and it's fair to say that it's the most prevalent influence in my life. My primary preference is the Fantasy genre, as I enjoy seeing characters
                     being placed under stresses and pressures that we wouldn't see in reality, but thinking upon those reactions and what's believeable and what isn't illuminates human nature from a different angle that I find fascinating.
                     I'm not sure a fantasy lover can avoid Brandon Sanderson's works these days, but other works I've enjoyed include (in no particular order): Wheel of Time, Riftwar, Realm of the Elderlings, Cradle, Foundation, Dune, 

@@ -1,13 +1,8 @@
-import {useState} from 'react';
-
 function University() {
-
-    const [visible, setVisible] = useState(false)
-
     return (
         <div>
-            <h3 onClick={() => setVisible(!visible)} name="early-history">University Education</h3>
-            <p id="university" style={{display:visible ? "block" : "none"}}>My A-Levels qualified me to attend my first choice of university, the University of Birmingham, to study Physics (BSc), a three year course. 
+            <h3 name="university">University Education</h3>
+            <p id="university" >My A-Levels qualified me to attend my first choice of university, the University of Birmingham, to study Physics (BSc), a three year course. 
                 During this course I studied basic Programming in C++, Mathematics, Astrophysics, Quantum Physics, Medical Imaging and Nuclear Physics
                 as well as compulsory physics subjects like Laboratory Physics and General Physics. After 3 years I graduated from the course with honours and the grade 2:2.
                 <br/>

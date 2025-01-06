@@ -1,11 +1,6 @@
-import AboutPage from "./AboutPage"
-import ProjectsPage from "./ProjectsPage"
-
 function HomePage () {
     return (
-        <div>
-            <AboutPage/>
-            <ProjectsPage/>
+        <div className="page-layout">
         </div>
     )
 }

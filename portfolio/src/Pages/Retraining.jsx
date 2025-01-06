@@ -1,13 +1,8 @@
-import {useState} from 'react';
-
 function Retraining() {
-
-    const [visible, setVisible] = useState(false)
-
     return (
         <div>
-            <h3 onClick={() => setVisible(!visible)} name="retraining">Re-skilling and Re-learning</h3>
-            <p id="retraining" style={{display:visible ? "block" : "none"}}>
+            <h3  name="retraining">Re-skilling and Re-learning</h3>
+            <p id="retraining">
                 By the time that 2019 arrived, I was feeling that I'd been out of work far too long already and began re-learning Meteor.js, which is when I first began hearing about React as a programming language. I spent much of the year working on
                 projects that caught my interest, but stalling out the moment that my motivation wavered, before eventually giving up during the difficult times in 2020. Spending the initial Covid wave living by myself and with little social or professional
                 contact took its toll on my mental and physical state, although I continued to make personal development progress in other areas.

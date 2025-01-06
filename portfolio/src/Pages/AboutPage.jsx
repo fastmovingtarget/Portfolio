@@ -1,34 +1,40 @@
-import EarlyHistory from "./EarlyHistory"
-import University from "./University"
-import Employment from "./Employment"
-import Unemployment from "./Unemployment"
-import Retraining from "./Retraining"
-import Hobbies from "./Hobbies"
+import { Outlet, useNavigate, useLocation } from "react-router";
 
 export default function AboutPage () {
+    const navigate = useNavigate();
+    const currentPage = useLocation().pathname;
 
     return (
-        <div>
-            <h2>About Me:</h2>
-            <div>
-                <h4>Name: James Alport</h4>
-                <h4>Role: Full Stack Web Developer</h4>                
-            </div>
-            <div>
-                <h4>Summary</h4>
-                <p>Hello, my name is James and I'm a software developer. I graduated University with degrees in Physics and Computer Science, then worked as a Software Developer at Theorem Solutions for 4 years, using C, C++, C#, .NET and Java 
-                    before eventually leaving to give myself opportunities to grow as a person. Since then I've moved my skills towards Web Development with Javascript, React and nodejs.
-                </p>
-            </div>
-            <div>
-                <EarlyHistory/>
-                <University/>
-                <Employment/>
-                <Unemployment/>
-                <Retraining/>                
-            </div>
-            <div>
-                <Hobbies/>
+        <div className="page-layout">
+            <header>
+                <nav id="about-navigation-bar" className="nav-bar">
+                    <div id="about-navigation-list" className="nav-list" >
+                        <div className={"nav-element" + (currentPage === "/About/AboutSummaryPage" || currentPage === "/About" ? " active" : "")} onClick={() => navigate("/About/AboutSummaryPage")}>
+                            <p>Summary</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/EarlyHistory" ? " active" : "")} onClick={() => navigate("/About/EarlyHistory")}>
+                            <p>Early History</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/University" ? " active" : "")} onClick={() => navigate("/About/University")}>
+                            <p>Higher Education</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/Employment" ? " active" : "")} onClick={() => navigate("/About/Employment")}>
+                            <p>Employment</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/Unemployment" ? " active" : "")} onClick={() => navigate("/About/Unemployment")}>
+                            <p>Unemployment</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/Retraining" ? " active" : "")} onClick={() => navigate("/About/Retraining")}>
+                            <p>Retraining</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/About/Hobbies" ? " active" : "")} onClick={() => navigate("/About/Hobbies")}>
+                            <p>Hobbies</p>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div className="sub-page-layout page-body">
+                <Outlet/>
             </div>
         </div>
     )

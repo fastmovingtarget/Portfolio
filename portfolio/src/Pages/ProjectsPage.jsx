@@ -1,25 +1,22 @@
-
+import { Outlet, useNavigate, useLocation } from "react-router";
 
 export default function ProjectsPage () {
+    const navigate = useNavigate();
+    const currentPage = useLocation().pathname;
+    
     return (
-        <div>
-            <h2>Current Projects:</h2>
-            <div>
-                <h4>Finished Projects</h4>
-                <ul>
-                    <li>Recipe Web App</li>
-                </ul>
-            </div>
-            <div>
-                <h4>What I'm working on:</h4>
-                <ul>
-                    <li>Portfolio Web Site</li>
-                    <li>Music Notation Learning Web Site</li>
-                </ul>
-            </div>
-            <div>
-                <h4>My GitHub:</h4>
-                <a href="https://github.com/fastmovingtarget">https://github.com/fastmovingtarget</a>
+        <div className="page-layout">
+            <header>
+                <nav id="projects-navigation-bar" className="nav-bar">
+                    <div id="projects-navigation-list" className="nav-list" >
+                        <div className={"nav-element" + (currentPage === "/Projects/ProjectSummaryPage" || currentPage === "/Projects" ? " active" : "")} onClick={() => navigate("/Projects/ProjectSummaryPage")}>
+                            <p>Summary</p>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div className="sub-page-layout page-body">
+                <Outlet/>
             </div>
         </div>
     )

@@ -1,13 +1,8 @@
-import {useState} from 'react';
-
 function Employment() {
-
-    const [visible, setVisible] = useState(false)
-
     return (
         <div>
-            <h3 onClick={() => setVisible(!visible)} name="employment">Employment History</h3>
-            <p id="employment" style={{display:visible ? "block" : "none"}}>
+            <h3 name="employment">Employment History</h3>
+            <p id="employment" >
                 Job Hunting is always difficult, but I was able to find a role within 6 months of starting. In March 2012 I joined Theorem Solutions as a Junior Software Developer.
                 Theorem is a company that provides a service to migrate Computer Aided Design (CAD) files between different formats, with clients ranging from CAD supplies like Siemens Digital Industries Software and Dassault Systemes
                 to CAD users like AirBus or NASA.
