@@ -37,3 +37,11 @@ Next Step: Expand the navigation bar to point to different parts of my biography
 I've done a lot of routing towards the various sub-pages, now there are nav bars within nav bars. I've also started the process of recording quick demo videos (and I've added the first into Home Page as a thumbnail for my BBSRecipe project)
 
 Next Step: Moar demo videos
+
+### Day 4 - 07/01/2025
+
+Why do people employ QA? The easiest way to find every bug in a program is to demo it without preparation.
+None of the bugs I found were actually that bad, and I did get a good amount of footage for the little videos that my brain is telling me will definitely be a good idea to have in my breakdown (hah) of my recipe app. I'm sure I'm not the only one, but I do find that kind of video editing draining, especially when I'm trying to consider how best to show off a feature and hey look it's recording and I suddenly can't type or spell. I know never to do maths when recording, but apparently the same applies to spelling Celsius.
+No actual code on portfolio site today, but hopefully I'll be able to get to integrating my vids tomorrow.
+
+Next Step: Finish demo videos, begin integrating with text feature explanation
