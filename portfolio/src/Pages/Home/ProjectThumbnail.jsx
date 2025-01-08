@@ -11,15 +11,9 @@ function ProjectThumbnail ({project}) {
      
      const playVideo = e => {
          e.target.play();
-         setVideoStyles({
-             transform: "scale(1.1, 1.1)"
-         });
      }
      const stopVideo = e => {
          e.target.pause();
-         setVideoStyles({
-             transform: "scale(1, 1)"
-         });
      }
 
     return (

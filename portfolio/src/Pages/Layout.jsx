@@ -12,7 +12,7 @@ function Layout() {
                 <img className="header-image" src={HeaderImage} alt="Target's Header"/>
                 <nav id="navigation-bar" className="nav-bar">
                     <div id="navigation-list" className="nav-list" >
-                        <div className={"nav-element tier-1" + (currentPage.includes("/Home") || currentPage.includes("/") ? " active" : "")} onClick={() => navigate("/Home")}>
+                        <div className={"nav-element tier-1" + (currentPage.includes("/Home") || currentPage === ("/") ? " active" : "")} onClick={() => navigate("/Home")}>
                             <p>Home</p>
                         </div>
                         <div className={"nav-element tier-1" + (currentPage.includes("/About") ? " active" : "")} onClick={() => navigate("/About")}>

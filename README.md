@@ -46,3 +46,9 @@ None of the bugs I found were actually that bad, and I did get a good amount of 
 No actual code on portfolio site today, but hopefully I'll be able to get to integrating my vids tomorrow.
 
 Next Step: Finish demo videos, begin integrating with text feature explanation
+
+### Day 5 - 08/01/2025
+
+Finished off recording the demo videos with far fewer incidents than yesterday. I was also able to start getting some code (or html and css) in, with a feature breakdown and some nice reactive transitions. I've not finished doing the written breakdown/discusson of the features yet, so that will come in tomorrow, hopefully.
+
+Next Step: Finish feature descriptions, then work on Recipe Project: Thoughts
