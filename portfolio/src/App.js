@@ -11,7 +11,8 @@ import Unemployment from "./Pages/About/Unemployment"
 import Retraining from "./Pages/About/Retraining"
 import Hobbies from "./Pages/About/Hobbies"
 import ProjectSummaryPage from "./Pages/Projects/ProjectSummaryPage"
-import BestBeforeStartPage from "./Pages/Projects/BestBeforeStartPage"
+import RecipeProjectThoughts from './Pages/Projects/RecipeProject/RecipeProjectThoughts';
+import RecipeProjectFeatures from './Pages/Projects/RecipeProject/RecipeProjectFeatures';
 import Layout from './Pages/Layout';
 import './App.css';
 
@@ -36,7 +37,8 @@ function App() {
                         <Route path="Projects" element={<ProjectsPage />}>
                             <Route index element={<ProjectSummaryPage/>} />
                             <Route path="ProjectSummary" element={<ProjectSummaryPage/>} />
-                            <Route path="BestBeforeStart" element={<BestBeforeStartPage/>} />
+                            <Route path="RecipeProjectThoughts" element={<RecipeProjectThoughts/>} />
+                            <Route path="RecipeProjectFeatures" element={<RecipeProjectFeatures/>} />
                         </Route>
                     </Route>
                 </Routes>

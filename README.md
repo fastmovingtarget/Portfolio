@@ -40,7 +40,8 @@ Next Step: Moar demo videos
 
 ### Day 4 - 07/01/2025
 
-Why do people employ QA? The easiest way to find every bug in a program is to demo it without preparation.
+Recording demo videos has given me a new appreciation for the role that QA plays in the development process. Can't believe how many bugs I'd missed...
+
 None of the bugs I found were actually that bad, and I did get a good amount of footage for the little videos that my brain is telling me will definitely be a good idea to have in my breakdown (hah) of my recipe app. I'm sure I'm not the only one, but I do find that kind of video editing draining, especially when I'm trying to consider how best to show off a feature and hey look it's recording and I suddenly can't type or spell. I know never to do maths when recording, but apparently the same applies to spelling Celsius.
 No actual code on portfolio site today, but hopefully I'll be able to get to integrating my vids tomorrow.
 

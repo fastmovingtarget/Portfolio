@@ -1,4 +1,5 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
+import "./ProjectsPage.css"
 
 export default function ProjectsPage () {
     const navigate = useNavigate();
@@ -9,8 +10,14 @@ export default function ProjectsPage () {
             <header>
                 <nav id="projects-navigation-bar" className="nav-bar">
                     <div id="projects-navigation-list" className="nav-list" >
-                        <div className={"nav-element" + (currentPage === "/Projects/ProjectSummaryPage" || currentPage === "/Projects" ? " active" : "")} onClick={() => navigate("/Projects/ProjectSummaryPage")}>
+                        <div className={"nav-element" + (currentPage === "/Projects/ProjectSummary" || currentPage === "/Projects" ? " active" : "")} onClick={() => navigate("/Projects/ProjectSummary")}>
                             <p>Summary</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProjectThoughts" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProjectThoughts")}>
+                            <p>Recipe Project: Thoughts</p>
+                        </div>
+                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProjectFeatures" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProjectFeatures")}>
+                            <p>Recipe Project: Features</p>
                         </div>
                     </div>
                 </nav>
