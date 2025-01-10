@@ -1,6 +1,15 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
 import "./Layout.css"
 import HeaderImage from "../Images/Header.png"
+import reactImage from "../Images/tech_react.png"
+import nodeImage from "../Images/tech_node.png"
+import mysqlImage from "../Images/tech_mysql.png"
+import githubImage from "../Images/tech_github.png"
+import azureImage from "../Images/tech_azure.png"
+import cImage from "../Images/tech_c.png"
+import cppImage from "../Images/tech_cpp.png"
+import csharpImage from "../Images/tech_csharp.png"
+import javaImage from "../Images/tech_java.png"
 
 function Layout() {
     const navigate = useNavigate();
@@ -10,6 +19,23 @@ function Layout() {
         <div className="Layout">
             <header className="layout-header column">
                 <img className="header-image" src={HeaderImage} alt="Target's Header"/>
+                <div className="tech-stacks column">
+                    <div className="row">
+                        <img className="tech_stack hoverable" src={reactImage} alt="React logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={nodeImage} alt="Node logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={mysqlImage} alt="Html, javascript and CSS logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={githubImage} alt="Html, javascript and CSS logo" height="80px"/>
+                    </div>
+                    <div className="row">
+                        <img className="tech_stack hoverable" src={azureImage} alt="Azure logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={cImage} alt="C logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={cppImage} alt="Html, javascript and CSS logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={csharpImage} alt="Html, javascript and CSS logo" height="80px"/>
+                        <img className="tech_stack hoverable" src={javaImage} alt="Html, javascript and CSS logo" height="80px"/>
+                    </div>
+                </div>
+            </header>
+            <div className="layout-main">
                 <nav id="navigation-bar" className="nav-bar">
                     <div id="navigation-list" className="nav-list" >
                         <div className={"nav-element tier-1" + (currentPage.includes("/Home") || currentPage === ("/") ? " active" : "")} onClick={() => navigate("/Home")}>
@@ -23,8 +49,8 @@ function Layout() {
                         </div>
                     </div>
                 </nav>
-            </header>
-            <Outlet />
+                <Outlet />
+            </div>
         </div>
     );
 }

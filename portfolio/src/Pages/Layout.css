@@ -12,7 +12,28 @@
     --colour-tertiary-hover: #186972;
     --colour-text:#aaccff;
     --body-padding:20px;
+    
+    background-color: var(--colour-primary);
+    color: var(--colour-text);
     /*--colour-text:#0B1C36;*/
+    .layout-main{
+      display:flex;
+      .nav-bar{
+        background-color: var(--colour-primary-light);
+      }
+      @media screen and (width >= 1200px){
+        flex-direction:column;
+        .nav-list{
+          flex-direction:row;
+        }
+      }
+      @media screen and (width < 1200px){
+        flex-direction:row;
+        .nav-list{
+          flex-direction:column;
+        }
+      }
+    }
   }
 
   .page-body{
@@ -21,27 +42,58 @@
 
 .layout-header{
     background-color: var(--colour-primary-light);
+    position:relative;
     .header-image{
       display:block;
       width:100%;
       height:auto;
       margin:0px;
     }
+    .tech-stacks{
+      position:absolute;
+      bottom:10px;
+      right:10px;
+      .tech_stack{
+        &:hover{
+          background-color: var(--colour-secondary-light);
+        }
+        margin:5px;
+        @media screen and (width >= 1200px){
+          height:80px;
+        }
+        @media screen and (1000px <= width < 1200px){
+          height:60px;
+        }
+        @media screen and (800px <= width < 1000px){
+          height:40px;
+        }
+        @media screen and (width < 800px){
+          height:20px;
+          padding:3px;
+          margin:3px;
+        }
+        @media screen and (hover:none){
+          background-color: var(--colour-secondary-light);
+        }
+      }
+    }
   }
 
   .page-layout{
     background-color: var(--colour-primary);
+    max-height:100%;
+    width:100%;
     .sub-page-layout{
       display:flex;
-      background-color: var(--colour-primary-intermed);
-      min-height:100%;
+      background-color: var(--colour-primary);
+      overflow-y:auto;
       padding:var(--body-padding);
     }
     #about-navigation-list, #projects-navigation-list{
       margin-top:5px;
       .nav-element{
         &.active{
-          background-color: var(--colour-primary-intermed);
+          background-color: var(--colour-primary);
         }
       }
     }
@@ -94,18 +146,17 @@ h4{
   
 .app-body {
     background-color: var(--colour-primary);
+    color: var(--colour-text);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: var(--colour-text);
   }
 
   .nav-list{
     display:flex;
-    flex-direction:row;
     .nav-element{
       padding:10px;
       color: #aaccff;
