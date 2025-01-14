@@ -36,10 +36,6 @@
     }
   }
 
-  .page-body{
-    width:calc(100% - var(--body-padding)*2);
-    padding:var(--body-padding);
-  }
 
 .layout-header{
     background-color: var(--colour-primary-light);
@@ -89,6 +85,11 @@
       display:flex;
       background-color: var(--colour-primary);
       overflow-y:auto;
+      width:100%;
+      .page-body{
+        width:calc(100% - var(--body-padding)*2);
+        padding:var(--body-padding);
+      }
     }
     #about-navigation-list, #projects-navigation-list{
       .nav-element{
@@ -164,6 +165,7 @@ h4{
 
   .nav-list{
     display:flex;
+    position:sticky;
     .nav-element{
       padding:10px;
       color: #aaccff;

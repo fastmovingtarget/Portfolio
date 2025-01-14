@@ -41,9 +41,9 @@ function App() {
                             <Route path="ProjectSummary" element={<ProjectSummaryPage/>} />
                             <Route path="RecipeProject" element={<RecipeProjectLayout/>}>
                                 <Route index element={<RecipeProjectSummary/>} />
-                                <Route path="RecipeProjectSummary" element={<RecipeProjectSummary/>} />
-                                <Route path="RecipeProjectThoughts" element={<RecipeProjectThoughts/>} />
-                                <Route path="RecipeProjectFeatures" element={<RecipeProjectFeatures/>} />
+                                <Route path="Summary" element={<RecipeProjectSummary/>} />
+                                <Route path="Thoughts" element={<RecipeProjectThoughts/>} />
+                                <Route path="Features" element={<RecipeProjectFeatures/>} />
                             </Route>
                         </Route>
                     </Route>

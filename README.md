@@ -58,3 +58,13 @@ Next Step: Finish feature descriptions, then work on Recipe Project: Thoughts
 Short day - finished off the descriptions for the feature demo videos and added a little styling to the Recipe Project Thoughts page.
 
 Next Step: Start doing the same for Misac
+
+### Day 7...ish - 14/01/2025
+
+I've been feeling unwell the past few days so I'll fold what little progress I made before today into "day 7"
+
+Recorded feature videos for Misac and fixed a couple of styling issues within that project.
+
+Created a Recipe Project Summary page and moved Thoughts and Features pages a level lower so there was a distinct hierarchy of Projects->Recipe Project->Summary/Features/Thoughts rather than leaving them all in the projects navigation bar.
+
+Added Misac thumbnail to the home page and listed the technologies it used

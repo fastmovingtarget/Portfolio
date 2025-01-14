@@ -7,7 +7,7 @@ function HomePage () {
         name:"BestBeforeStart",
         videoSource:bbsIngredientsSearch,
         techStacks:["React", "MySQL", "node.js"],
-        route:"../Projects/RecipeProjectSummary"
+        route:"../Projects/RecipeProject/Summary"
     },{
         name:"Misac",
         videoSource:MisacPlay,

@@ -9,13 +9,13 @@ export default function RecipeProjectPage () {
             <header>
                 <nav id="recipe-navigation-bar" className="nav-bar projects recipes">
                     <div id="recipesnavigation-list" className="nav-list projects recipes" >
-                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/RecipeProjectSummary" || currentPage === "/Projects/Recipe/" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/RecipeProjectSummary")}>
+                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/Summary" || currentPage === "/Projects/RecipeProject" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/Summary")}>
                             <p>Summary</p>
                         </div>
-                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/RecipeProjectThoughts" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/RecipeProjectThoughts")}>
+                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/Thoughts" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/Thoughts")}>
                             <p>Thoughts</p>
                         </div>
-                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/RecipeProjectFeatures" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/RecipeProjectFeatures")}>
+                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject/Features" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject/Features")}>
                             <p>Features</p>
                         </div>
                     </div>

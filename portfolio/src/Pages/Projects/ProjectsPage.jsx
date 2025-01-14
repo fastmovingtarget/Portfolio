@@ -5,8 +5,6 @@ export default function ProjectsPage () {
     const navigate = useNavigate();
     const currentPage = useLocation().pathname;
     
-console.log(currentPage)
-
     return (
         <div className="page-layout">
             <header>
@@ -15,7 +13,7 @@ console.log(currentPage)
                         <div className={"nav-element" + (currentPage === "/Projects/ProjectSummary" || currentPage === "/Projects" ? " active" : "")} onClick={() => navigate("/Projects/ProjectSummary")}>
                             <p>Summary</p>
                         </div>
-                        <div className={"nav-element" + (currentPage === "/Projects/RecipeProject" ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject")}>
+                        <div className={"nav-element" + (currentPage.includes("/Projects/RecipeProject") ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject")}>
                             <p>Recipe Project</p>
                         </div>
                     </div>
