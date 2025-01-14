@@ -41,11 +41,11 @@ function Layout() {
                         <div className={"nav-element tier-1" + (currentPage.includes("/Home") || currentPage === ("/") ? " active" : "")} onClick={() => navigate("/Home")}>
                             <p>Home</p>
                         </div>
-                        <div className={"nav-element tier-1" + (currentPage.includes("/About") ? " active" : "")} onClick={() => navigate("/About")}>
-                            <p>About</p>
-                        </div>
                         <div className={"nav-element tier-1" + (currentPage.includes("/Projects") ? " active" : "")} onClick={() => navigate("/Projects")}>
                             <p>Projects</p>
+                        </div>
+                        <div className={"nav-element tier-1" + (currentPage.includes("/About") ? " active" : "")} onClick={() => navigate("/About")}>
+                            <p>About</p>
                         </div>
                     </div>
                 </nav>

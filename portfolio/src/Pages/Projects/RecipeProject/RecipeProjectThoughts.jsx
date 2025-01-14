@@ -4,9 +4,6 @@ export default function RecipeProjectThoughts () {
 
     return (
         <div>
-            <div className="hoverable">
-                <h4>Repository: <a href="https://github.com/fastmovingtarget/BestBeforeAzure"> BestBeforeAzure </a></h4>
-            </div>
             <h2>Reflections on the BestBefore Recipe Project so far:</h2>
             <div>
                 <div className="hoverable">
@@ -179,10 +176,10 @@ export default function RecipeProjectThoughts () {
                             <ul>
                                 <li>How to use React in an actual project: I'm now much more knowledgeable about State, Hooks and Context tools and how to use them, as well as being more confident at Routing</li>
                                 <li>How to make and use an API server: I'd never tried this before, and while the implementation is quite simple, actually making it work took a surprising amount of learning and troubleshooting</li>
-                                <li>Using Database for data storage: I'd worked with MySQL before and had some education on database structure during my University education, so I was always fairly confident in this. That said, 
+                                <li>Using Database for data storage: I'd worked with MySQL before and had some understanding of database structure from my University education, so I was always fairly confident in this. That said, 
                                     I was able to use the database in ways I'd not expected and with a greater complexity to my queries than I'd ever used before.
                                 </li>
-                                <li>Unit Testing: I'd been aware of this as a major weak point in my development knowledge. I was able to move myself from being unable to test the most basic things to being able to find ways to test some 
+                                <li>Unit Testing: I'd been aware of this as a major weak point in my development knowledge. I was able to move myself from being struggling to test the most basic things to being able to find ways to test some 
                                     quite complex interactions that were found during the testing cycle. This is the progress that I'm probably most proud of, and I'm looking forward to making use of this knowledge going forwards into 
                                     other applications!
                                 </li>
@@ -190,7 +187,7 @@ export default function RecipeProjectThoughts () {
                                     a product. Learning about the steps needed to move an item towards a deployable/usable state and being able to finally make something that I could share was a really good moment for me, and in many ways
                                     a monkey off my back.
                                 </li>
-                                <li>Client-Server interactions: I'd thought my knowledge of http protocols and the like was decent, but actually implementing them forced me to learn in a more concrete way, and I was able to put into effect 
+                                <li>Client-Server interactions: I'd thought my theoretical knowledge of http protocols and the like was decent, but actually putting them into practice them forced me to learn in a more concrete way, and I was able to build 
                                     a system that I was fairly happy with.
                                 </li>
                                 <li>User data and logins: I'd had some knowledge of how user data should be transferred and stored, but the actual interactions were something I was a lot hazier on. Learning about how tokens work was also

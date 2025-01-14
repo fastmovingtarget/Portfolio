@@ -17,7 +17,7 @@ function ProjectSummaryPage(){
             </div>
             <div>
                 <h4>My GitHub:</h4>
-                <a href="https://github.com/fastmovingtarget">https://github.com/fastmovingtarget</a>
+                <a className="hyperlink" href="https://github.com/fastmovingtarget">https://github.com/fastmovingtarget</a>
             </div>
         </div>
     )

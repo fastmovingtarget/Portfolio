@@ -13,6 +13,8 @@ import Hobbies from "./Pages/About/Hobbies"
 import ProjectSummaryPage from "./Pages/Projects/ProjectSummaryPage"
 import RecipeProjectThoughts from './Pages/Projects/RecipeProject/RecipeProjectThoughts';
 import RecipeProjectFeatures from './Pages/Projects/RecipeProject/RecipeProjectFeatures';
+import RecipeProjectSummary from './Pages/Projects/RecipeProject/RecipeProjectSummary';
+import RecipeProjectLayout from './Pages/Projects/RecipeProject/RecipeProjectLayout';
 import Layout from './Pages/Layout';
 import './App.css';
 
@@ -37,8 +39,12 @@ function App() {
                         <Route path="Projects" element={<ProjectsPage />}>
                             <Route index element={<ProjectSummaryPage/>} />
                             <Route path="ProjectSummary" element={<ProjectSummaryPage/>} />
-                            <Route path="RecipeProjectThoughts" element={<RecipeProjectThoughts/>} />
-                            <Route path="RecipeProjectFeatures" element={<RecipeProjectFeatures/>} />
+                            <Route path="RecipeProject" element={<RecipeProjectLayout/>}>
+                                <Route index element={<RecipeProjectSummary/>} />
+                                <Route path="RecipeProjectSummary" element={<RecipeProjectSummary/>} />
+                                <Route path="RecipeProjectThoughts" element={<RecipeProjectThoughts/>} />
+                                <Route path="RecipeProjectFeatures" element={<RecipeProjectFeatures/>} />
+                            </Route>
                         </Route>
                     </Route>
                 </Routes>

@@ -22,15 +22,15 @@
         background-color: var(--colour-primary-light);
       }
       @media screen and (width >= 1200px){
-        flex-direction:column;
-        .nav-list{
-          flex-direction:row;
+        flex-direction:row;
+        #navigation-list{
+          flex-direction:column;
         }
       }
       @media screen and (width < 1200px){
-        flex-direction:row;
-        .nav-list{
-          flex-direction:column;
+        flex-direction:column;
+        .navigation-list{
+          flex-direction:row;
         }
       }
     }
@@ -38,6 +38,7 @@
 
   .page-body{
     width:calc(100% - var(--body-padding)*2);
+    padding:var(--body-padding);
   }
 
 .layout-header{
@@ -82,15 +83,14 @@
   .page-layout{
     background-color: var(--colour-primary);
     max-height:100%;
-    width:100%;
+    width:calc(100% - 10px);
+    padding:5px;
     .sub-page-layout{
       display:flex;
       background-color: var(--colour-primary);
       overflow-y:auto;
-      padding:var(--body-padding);
     }
     #about-navigation-list, #projects-navigation-list{
-      margin-top:5px;
       .nav-element{
         &.active{
           background-color: var(--colour-primary);
@@ -105,6 +105,13 @@
     justify-content: top;
     font-size: calc(10px + 1vmin);
     color: var(--colour-text);
+    .hyperlink{
+      color: var(--colour-tertiary-light);
+      font-weight: bold;
+      &:visited{
+        color: var(--colour-secondary-light);
+      }
+    }
   }
 
 .column{
