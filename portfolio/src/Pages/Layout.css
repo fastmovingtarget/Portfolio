@@ -40,8 +40,31 @@
 .layout-header{
     background-color: var(--colour-primary-light);
     position:relative;
-    .header-image{
-      display:block;
+    max-height:70vh;
+    @media screen and (width >= 570px){
+      .header-image-landscape{
+        display:block;
+      }
+      .header-image-portrait{
+        display:none;
+      }
+    }
+    @media screen and (width < 570px){
+      .header-image-landscape{
+        display:none;
+      }
+      .header-image-portrait{
+        display:block;
+      }
+    }
+    .header-image-landscape{
+      width:100%;
+      height:auto;
+      margin:0px;
+    }
+    .header-image-portrait{
+        position:relative;
+        bottom:0px;
       width:100%;
       height:auto;
       margin:0px;
@@ -49,10 +72,10 @@
     .tech-stacks{
       position:absolute;
       bottom:10px;
-      right:10px;
+      left:10px;
       .tech_stack{
         &:hover{
-          background-color: var(--colour-secondary-light);
+          background-color: var(--colour-secondary);
         }
         margin:5px;
         @media screen and (width >= 1200px){
@@ -70,7 +93,50 @@
           margin:3px;
         }
         @media screen and (hover:none){
-          background-color: var(--colour-secondary-light);
+          background-color: var(--colour-secondary);
+        }
+      }
+    }
+    .text-summary-container{
+      position:absolute;
+      bottom:10px;
+      right:10px;
+      text-align: left;
+      max-width:45%;
+      @media screen and (width >= 1600px){
+        h1{
+          font-size: 32px;
+        }
+        h2{
+          font-size: 24px;
+        }
+        h3{
+          font-size: 20px;
+        }
+      }
+      @media screen and (1400px <= width < 1600px){
+        h1{
+          font-size: 24px;
+        }
+        h2{
+          font-size: 20px;
+        }
+        h3{
+          font-size: 18px;
+        }
+      }
+      @media screen and (width < 1400px){
+        h1{
+          font-size: 24px;
+        }
+        h2{
+          font-size: 20px;
+        }
+        h3{
+          font-size: 18px;
+          &.summary-2{
+            display:none;
+          }
         }
       }
     }
@@ -110,7 +176,7 @@
       color: var(--colour-tertiary-light);
       font-weight: bold;
       &:visited{
-        color: var(--colour-secondary-light);
+        color: var(--colour-tertiary);
       }
     }
   }

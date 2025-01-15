@@ -73,3 +73,6 @@ Next Step: Add thoughts and features for Misac Project
 
 ### Day 8 - 15/01/2025
 
+Thoughts and ~~prayers~~ features have been added for the Misac Project, as well as a quick summary. Lots of writing but not much code, so not much to say here.
+
+Next Step: Get everything in a good place for Mobile and Desktop CSS, then look at deploying.
