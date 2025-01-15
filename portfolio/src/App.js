@@ -15,6 +15,10 @@ import RecipeProjectThoughts from './Pages/Projects/RecipeProject/RecipeProjectT
 import RecipeProjectFeatures from './Pages/Projects/RecipeProject/RecipeProjectFeatures';
 import RecipeProjectSummary from './Pages/Projects/RecipeProject/RecipeProjectSummary';
 import RecipeProjectLayout from './Pages/Projects/RecipeProject/RecipeProjectLayout';
+import MisacProjectThoughts from './Pages/Projects/MisacProject/MisacProjectThoughts';
+import MisacProjectFeatures from './Pages/Projects/MisacProject/MisacProjectFeatures';
+import MisacProjectSummary from './Pages/Projects/MisacProject/MisacProjectSummary';
+import MisacProjectLayout from './Pages/Projects/MisacProject/MisacProjectLayout';
 import Layout from './Pages/Layout';
 import './App.css';
 
@@ -44,6 +48,12 @@ function App() {
                                 <Route path="Summary" element={<RecipeProjectSummary/>} />
                                 <Route path="Thoughts" element={<RecipeProjectThoughts/>} />
                                 <Route path="Features" element={<RecipeProjectFeatures/>} />
+                            </Route>
+                            <Route path="MisacProject" element={<MisacProjectLayout/>}>
+                                <Route index element={<MisacProjectSummary/>} />
+                                <Route path="Summary" element={<MisacProjectSummary/>} />
+                                <Route path="Thoughts" element={<MisacProjectThoughts/>} />
+                                <Route path="Features" element={<MisacProjectFeatures/>} />
                             </Route>
                         </Route>
                     </Route>

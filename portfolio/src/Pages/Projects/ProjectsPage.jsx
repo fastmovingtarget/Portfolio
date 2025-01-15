@@ -16,6 +16,9 @@ export default function ProjectsPage () {
                         <div className={"nav-element" + (currentPage.includes("/Projects/RecipeProject") ? " active" : "")} onClick={() => navigate("/Projects/RecipeProject")}>
                             <p>Recipe Project</p>
                         </div>
+                        <div className={"nav-element" + (currentPage.includes("/Projects/MisacProject") ? " active" : "")} onClick={() => navigate("/Projects/MisacProject")}>
+                            <p>Music Project</p>
+                        </div>
                     </div>
                 </nav>
             </header>

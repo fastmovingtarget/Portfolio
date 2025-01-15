@@ -67,4 +67,9 @@ Recorded feature videos for Misac and fixed a couple of styling issues within th
 
 Created a Recipe Project Summary page and moved Thoughts and Features pages a level lower so there was a distinct hierarchy of Projects->Recipe Project->Summary/Features/Thoughts rather than leaving them all in the projects navigation bar.
 
-Added Misac thumbnail to the home page and listed the technologies it used
+Added Misac thumbnail to the home page and listed the technologies it used.
+
+Next Step: Add thoughts and features for Misac Project
+
+### Day 8 - 15/01/2025
+

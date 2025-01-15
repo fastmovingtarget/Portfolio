@@ -12,7 +12,7 @@ function HomePage () {
         name:"Misac",
         videoSource:MisacPlay,
         techStacks:["React", "HTML5", "CSS"],
-        route:"../Projects/RecipeProjectSummary"
+        route:"../Projects/MisacProject/Summary"
     }]
 
 
