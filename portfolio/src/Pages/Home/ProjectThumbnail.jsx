@@ -6,7 +6,7 @@ import {useState} from "react"
 function ProjectThumbnail ({project}) {
     const navigate = useNavigate();
     const [videoStyles, setVideoStyles] = useState({
-        transition: "all 1.5s"
+        transition: "all 0.5s"
      });    
      
      const playVideo = e => {
@@ -19,7 +19,7 @@ function ProjectThumbnail ({project}) {
     return (
         <div className="thumbnail-container" style={videoStyles}>
             <div className="tech-stack-container row">
-                {project.techStacks.map(tech => <p>{tech}</p>)}
+                {project.techStacks.map((tech, index) => <p key={"tech-stack-" + index}>{tech}</p>)}
             </div>
             <video src={project.videoSource} alt="placeholder" onMouseOver={playVideo} onMouseOut={stopVideo} onClick={() => navigate(project.route)} style={videoStyles} muted loop width="500px"/>
         </div>

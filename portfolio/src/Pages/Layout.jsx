@@ -21,25 +21,27 @@ function Layout() {
             <header className="layout-header column">
                 <img className="header-image-landscape" src={HeaderImage} alt="Target's Header"/>
                 <img className="header-image-portrait" src={HeaderImagePortrait} alt="Target's Header"/>
-                <div className="text-summary-container">
-                    <h1>Hi, I'm James Alport a.k.a. fastmovingtarget</h1>
-                    <h2>I'm a Full Stack Web Developer, currently looking for work</h2>
-                    <h3 className="summary-1">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science</h3>
-                    <h3 className="summary-2">Since then I have worked as a Software Developer at Theorem Solutions before moving on to working on my own projects and personal growth </h3>
-                </div>
-                <div className="tech-stacks column">
-                    <div className="row">
-                        <img className="tech_stack hoverable" src={reactImage} alt="React logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={nodeImage} alt="Node logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={mysqlImage} alt="Html, javascript and CSS logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={githubImage} alt="Html, javascript and CSS logo" height="80px"/>
+                <div id="header-items-container">
+                    <div className="tech-stacks column">
+                        <div className="row">
+                            <img className="tech_stack hoverable" src={reactImage} alt="React logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={nodeImage} alt="Node logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={mysqlImage} alt="Html, javascript and CSS logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={githubImage} alt="Html, javascript and CSS logo" height="80px"/>
+                        </div>                        
+                        <div className="row">
+                            <img className="tech_stack hoverable" src={azureImage} alt="Azure logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={cImage} alt="C logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={cppImage} alt="Html, javascript and CSS logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={csharpImage} alt="Html, javascript and CSS logo" height="80px"/>
+                            <img className="tech_stack hoverable" src={javaImage} alt="Html, javascript and CSS logo" height="80px"/>
+                        </div>
                     </div>
-                    <div className="row">
-                        <img className="tech_stack hoverable" src={azureImage} alt="Azure logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={cImage} alt="C logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={cppImage} alt="Html, javascript and CSS logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={csharpImage} alt="Html, javascript and CSS logo" height="80px"/>
-                        <img className="tech_stack hoverable" src={javaImage} alt="Html, javascript and CSS logo" height="80px"/>
+                    <div className="text-summary-container">
+                        <h1>Hi, I'm James Alport a.k.a. fastmovingtarget!</h1>
+                        <h2>I'm a Full Stack Web Developer, currently looking for work.</h2>
+                        <h3 className="summary-1">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science.</h3>
+                        <h3 className="summary-2">Since then I have worked as a Software Developer at Theorem Solutions before moving on to working on my own projects and personal growth.</h3>
                     </div>
                 </div>
             </header>

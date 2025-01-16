@@ -20,7 +20,7 @@ function HomePage () {
         <div className="page-layout">
             <div className="projects-container row">
                 {
-                    projects.map(project => <ProjectThumbnail project={project}/>)
+                    projects.map((project, index) => <ProjectThumbnail key={"home-thumbnail-" + index} project={project}/>)
                 }
             </div>
         </div>

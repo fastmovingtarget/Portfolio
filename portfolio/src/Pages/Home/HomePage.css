@@ -15,6 +15,15 @@
     border-radius:5px;
     margin:10px;
     padding:10px;
+    @media screen and (width < 550px){
+        width:calc(100% - 40px);
+        video{
+            width:100%;
+        }
+    }        
+    @media screen and (width >= 550px){
+
+    }         
 
     &:hover{
         filter:brightness(120%);

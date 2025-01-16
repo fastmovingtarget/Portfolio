@@ -13,7 +13,7 @@ function Hobbies() {
                     Dyson Sphere Program and Satisfactory. Unsurprisingly enough, given my love of reading, I also love the more story-heavy RPG series like Final Fantasy, Tales, Persona as well as western titles like Mass Effect, 
                     Elder Scrolls and Baldur's Gate.
                 </li>
-                <li>Circus Society: Shortly after enrolling into the University of Birmingham I joined the Circus Society at the behest of my friends. The primary focus of this society was in teaching street performance techniques revolving around
+                <li>Circus Skills and Performance: Shortly after enrolling into the University of Birmingham I joined the Circus Society at the behest of my friends. The primary focus of this society was in teaching street performance techniques revolving around
                     object manipulation, including activities like juggling (with balls, clubs and silks...as well as most other things that can fit in a hand), cigar boxes, contact juggling, plate spinning and similar techniques.
                     I also learned showier skills centered around fire spinning performances, involving poi, whip, club juggling (again) and most importantly for me, staff. Staff spinning quickly became my primary specialty in the 
                     society, and after a couple of years I ended up as the primary instructor and most skilled performer. I found myself initially uncomfortable with performing, as my natural shyness came to the fore, and for my initial 

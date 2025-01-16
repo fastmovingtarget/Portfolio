@@ -12,13 +12,23 @@ li{
     }
     .feature-container{
         overflow:hidden;
-        @media screen and (width <= 500px){
+        @media screen and (width <= 800px){
             flex-direction:column;
             overflow-y:auto;
+            @media screen and (hover:hover){
+                scrollbar-width: none;
+                &:hover{
+                    scrollbar-width: thin;
+                }
+            }
+            @media screen and (hover:none){
+                scrollbar-width: thin;
+            }
         }
-        @media screen and (width > 500px){
+        @media screen and (width > 800px){
             flex-direction:row;
             overflow-x:auto;
+            overflow-y:auto;
             >div{
                 min-width:500px;
             }
