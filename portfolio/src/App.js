@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import HomePage from "./Pages/Home/HomePage"
 import AboutPage from "./Pages/About/AboutPage"
 import ProjectsPage from "./Pages/Projects/ProjectsPage"
@@ -25,7 +25,7 @@ import './App.css';
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<HomePage/>} />
@@ -58,7 +58,7 @@ function App() {
                         </Route>
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
   );
 }
