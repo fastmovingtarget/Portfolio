@@ -76,3 +76,9 @@ Next Step: Add thoughts and features for Misac Project
 Thoughts and ~~prayers~~ features have been added for the Misac Project, as well as a quick summary. Lots of writing but not much code, so not much to say here.
 
 Next Step: Get everything in a good place for Mobile and Desktop CSS, then look at deploying.
+
+### Day 9 - 16/01/2025
+
+I've been able to get my css into a good place and I think that the site looks good (or at least passable) at all reasonable aspect ratios and resolutions. It's now potentially ready to deploy!
+
+Next Step: Go make a proper CV, then add it to Portfolio site as a PDF link.
