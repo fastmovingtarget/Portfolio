@@ -1,6 +1,6 @@
 import ProjectThumbnail from "./ProjectThumbnail"
-import bbsIngredientsSearch from "../../Videos/BBSIngredientsSearch.mp4"
-import MisacPlay from "../../Videos/MisacPlay.mp4"
+import bbsIngredientsSearch from "../../Videos/tinytest.mp4"//"../../Videos/BBSIngredientsSearch.mp4"
+import MisacPlay from "../../Videos/tinytest.mp4"//"../../Videos/MisacPlay.mp4"
 
 function HomePage () {
     const projects = [{
