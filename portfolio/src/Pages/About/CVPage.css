@@ -1,0 +1,48 @@
+.cv-container{
+  --colour-primary-light  :#3D79D6;
+  --colour-secondary-light:#4D3DD6;
+  --colour-tertiary-light: #3DC6D6;
+  --colour-primary:  #1D4788;
+  --colour-secondary:#281D88;
+  --colour-tertiary: #1D7D88;
+  --colour-primary-hover:  #183C72;
+  --colour-secondary-hover:#221872;
+  --colour-tertiary-hover: #186972;
+  --colour-text:#aaccff;
+
+  
+    p, li, h3, h4{
+        text-align:start;
+    }
+    p, li{
+        margin: 5px;
+    }
+    h3{
+        margin:20px 5px;
+    }
+    h4{
+        margin:10px 5px;
+    }
+    li{
+        padding:8px;
+        margin-left:15px;
+    }
+    a{
+        &:visited{
+            color:(var(--colour-tertiary))
+        }
+        color:(var(--colour-tertiary-light))
+    }
+    .bisected-list{
+        display:flex;
+        flex-direction:row;
+        flex-flow: row wrap;
+        >*{
+            flex: 1 1 auto;
+            min-width: 450px;
+            width: calc(calc(100%/2) - 50px);
+            
+        }
+    }
+
+}

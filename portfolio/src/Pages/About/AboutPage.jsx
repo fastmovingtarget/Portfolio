@@ -12,6 +12,9 @@ export default function AboutPage () {
                         <div className={"nav-element" + (currentPage === "/About/AboutSummaryPage" || currentPage === "/About" ? " active" : "")} onClick={() => navigate("/About/AboutSummaryPage")}>
                             <p>Summary</p>
                         </div>
+                        <div className={"nav-element" + (currentPage === "/About/CVPage" ? " active" : "")} onClick={() => navigate("/About/CVPage")}>
+                            <p>CV</p>
+                        </div>
                         <div className={"nav-element" + (currentPage === "/About/EarlyHistory" ? " active" : "")} onClick={() => navigate("/About/EarlyHistory")}>
                             <p>Early History</p>
                         </div>
