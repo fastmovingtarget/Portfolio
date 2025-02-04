@@ -1,13 +1,8 @@
 import "./HomePage.css"
-import { Outlet, useNavigate, useLocation } from "react-router";
-import {useState} from "react"
-
+import { useNavigate } from "react-router";
 
 function ProjectThumbnail ({project}) {
     const navigate = useNavigate();
-    const [videoStyles, setVideoStyles] = useState({
-        transition: "all 0.5s"
-     });    
      
      const playVideo = e => {
          e.target.play();
@@ -17,11 +12,11 @@ function ProjectThumbnail ({project}) {
      }
 
     return (
-        <div className="thumbnail-container" style={videoStyles}>
+        <div className="thumbnail-container" style={{transition: "all 0.5s"}}>
             <div className="tech-stack-container row">
                 {project.techStacks.map((tech, index) => <p key={"tech-stack-" + index}>{tech}</p>)}
             </div>
-            <video src={project.videoSource} alt="placeholder" onMouseOver={playVideo} onMouseOut={stopVideo} onClick={() => navigate(project.route)} style={videoStyles} muted loop width="500px"/>
+            <video src={project.videoSource} alt="placeholder" onMouseOver={playVideo} onMouseOut={stopVideo} onClick={() => navigate(project.route)} style={{transition: "all 0.5s"}} muted loop width="500px"/>
         </div>
     )
 }
