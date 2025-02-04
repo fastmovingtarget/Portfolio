@@ -1,10 +1,10 @@
 import {useState} from "react"
 import MisacProjectFeature from "./MisacProjectFeature"
-import MisacPlay from "../../../Videos/tinytest.mp4"//"../../../Videos/MisacPlay.mp4"
-import MisacVolumeNumNotes from "../../../Videos/tinytest.mp4"//"../../../Videos/MisacVolumeNumNotes.mp4"
-import MisacKeySignature from "../../../Videos/tinytest.mp4"//"../../../Videos/MisacKeySignature.mp4"
-import MisacChangeOctave from "../../../Videos/tinytest.mp4"//"../../../Videos/MisacChangeOctave.mp4"
-import MisacVolumeKeyBindings from "../../../Videos/tinytest.mp4"//"../../../Videos/MisacVolumeKeyBindings.mp4"343225259/50003968
+import MisacPlay from "../../../Videos/MisacPlay.mp4"
+import MisacVolumeNumNotes from "../../../Videos/MisacVolumeNumNotes.mp4"
+import MisacKeySignature from "../../../Videos/MisacKeySignature.mp4"
+import MisacChangeOctave from "../../../Videos/MisacChangeOctave.mp4"
+import MisacVolumeKeyBindings from "../../../Videos/MisacVolumeKeyBindings.mp4"
 
 export default function MisacProjectFeatures () {
 
