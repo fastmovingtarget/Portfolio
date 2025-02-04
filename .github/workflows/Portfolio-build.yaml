@@ -33,6 +33,8 @@ jobs:
           node-version: v20.16.0
 
       - name: Build Node assets
+        working-directory:
+          ./portfolio
         env:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
