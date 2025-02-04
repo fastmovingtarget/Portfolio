@@ -5,7 +5,6 @@ import AboutPage from "./Pages/About/AboutPage"
 import CVPage from "./Pages/About/CVPage"
 import ProjectsPage from "./Pages/Projects/ProjectsPage"
 import EarlyHistory from "./Pages/About/EarlyHistory"
-import AboutSummaryPage from "./Pages/About/AboutSummaryPage"
 import University from "./Pages/About/University"
 import Employment from "./Pages/About/Employment"
 import Unemployment from "./Pages/About/Unemployment"
@@ -32,8 +31,7 @@ function App() {
                         <Route index element={<HomePage/>} />
                         <Route path="Home" element={<HomePage />} />
                         <Route path="About" element={<AboutPage />}>
-                            <Route index element={<AboutSummaryPage/>} />
-                            <Route path="AboutSummaryPage" element={<AboutSummaryPage/>} />
+                            <Route index element={<CVPage/>} />
                             <Route path="CVPage" element={<CVPage/>} />
                             <Route path="EarlyHistory" element={<EarlyHistory/>}/>
                             <Route path="University" element={<University/>}/>

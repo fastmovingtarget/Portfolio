@@ -9,10 +9,7 @@ export default function AboutPage () {
             <header>
                 <nav id="about-navigation-bar" className="nav-bar">
                     <div id="about-navigation-list" className="nav-list" >
-                        <div className={"nav-element" + (currentPage === "/About/AboutSummaryPage" || currentPage === "/About" ? " active" : "")} onClick={() => navigate("/About/AboutSummaryPage")}>
-                            <p>Summary</p>
-                        </div>
-                        <div className={"nav-element" + (currentPage === "/About/CVPage" ? " active" : "")} onClick={() => navigate("/About/CVPage")}>
+                        <div className={"nav-element" + (currentPage === "/About/CVPage"  || currentPage === "/About" ? " active" : "")} onClick={() => navigate("/About/CVPage")}>
                             <p>CV</p>
                         </div>
                         <div className={"nav-element" + (currentPage === "/About/EarlyHistory" ? " active" : "")} onClick={() => navigate("/About/EarlyHistory")}>
