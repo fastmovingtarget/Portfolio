@@ -9,7 +9,6 @@ function CVComponent() {
     const data = {
         "Contact Information":{
             "E-mail":"jrmalport@gmail.com",
-            "Mobile":"07840795751",
             "Location":"Horsham, West Sussex",
             "Portfolio":"https://fastmovingtarget.github.io/Portfolio/"
         },

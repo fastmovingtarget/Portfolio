@@ -11,6 +11,7 @@ import cImage from "../Images/tech_c.png"
 import cppImage from "../Images/tech_cpp.png"
 import csharpImage from "../Images/tech_csharp.png"
 import javaImage from "../Images/tech_java.png"
+import resume from "../Resources/James Alport Resume 20250203.pdf"
 
 function Layout() {
     const navigate = useNavigate();
@@ -38,10 +39,11 @@ function Layout() {
                         </div>
                     </div>
                     <div className="text-summary-container">
-                        <h1>Hi, I'm James Alport a.k.a. fastmovingtarget!</h1>
+                        <h1>Hi, I'm James Alport</h1>
                         <h2>I'm a Full Stack Web Developer, currently looking for work.</h2>
                         <h3 className="summary-1">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science.</h3>
                         <h3 className="summary-2">Since then I have worked as a Software Developer at Theorem Solutions before moving on to working on my own projects and personal growth.</h3>
+                        <h3><a href={resume} download>Download Resumé ⭳</a></h3>
                     </div>
                 </div>
             </header>
