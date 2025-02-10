@@ -49,7 +49,7 @@ export default function RecipeProjectSummary () {
 
             <h4>The final product:</h4>
             <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/BestBeforeAzure">Github Repository</a></li>
-            <li className="hoverable"><a className="hyperlink" href="https://jolly-bush-0e5187903.5.azurestaticapps.net/">Implemented web page</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://bestbeforerecipes.fastmovingtarget.co.uk/">Implemented web page</a></li>
         </div>
     )
 }
