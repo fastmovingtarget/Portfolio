@@ -2,6 +2,11 @@ export default function MisacProjectSummary () {
     return (
         <div>
             <h3>Music Project: "Misac" Summary</h3>
+
+            <h4>The final product:</h4>
+            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/Misac">Github Repository</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://fastmovingtarget.github.io/misac/">Implemented web page</a></li>
+            
             <div className="hoverable">
                 <ul>
                     <h4>The Problem:</h4>
@@ -44,10 +49,6 @@ export default function MisacProjectSummary () {
                     </li>
                 </ul>
             </div>
-
-            <h4>The final product:</h4>
-            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/Misac">Github Repository</a></li>
-            <li className="hoverable"><a className="hyperlink" href="https://fastmovingtarget.github.io/misac/">Implemented web page</a></li>
         </div>
     )
 }

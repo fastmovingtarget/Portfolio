@@ -2,6 +2,11 @@ export default function RecipeProjectSummary () {
     return (
         <div>
             <h3>Recipe Project: "BestBeforeStart" Summary</h3>
+
+            <h4>The final product:</h4>
+            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/BestBeforeAzure">Github Repository</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://bestbeforerecipes.fastmovingtarget.co.uk/">Implemented web page</a></li>
+            
             <div className="hoverable">
                 <ul>
                     <h4>The Problem:</h4>
@@ -46,10 +51,6 @@ export default function RecipeProjectSummary () {
                     <li>Step 5: Deploy</li>
                 </ul>
             </div>
-
-            <h4>The final product:</h4>
-            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/BestBeforeAzure">Github Repository</a></li>
-            <li className="hoverable"><a className="hyperlink" href="https://bestbeforerecipes.fastmovingtarget.co.uk/">Implemented web page</a></li>
         </div>
     )
 }
