@@ -1,13 +1,40 @@
 .page-layout{
     --colour-secondary-hover:#221872;
     --colour-secondary:#281D88;
+    overflow-x: default;
+}
+
+.tech-stacks{
+    align-self:flex-start;
+  height:100%;
+  .tech_stack{
+    height:min(80px, 8vw);
+    width:auto;
+    object-fit:contain;
+    
+  }
+  h4 {
+        font-size: min(50px, 5vw);
+        text-align: center;
+        vertical-align: middle;
+    }
 }
 
 .projects-container{
   height:auto;
-  width:100%;
-  justify-content: center;
+  justify-items: center;
   flex-wrap: wrap;
+  flex:1;
+  display:flex;
+  @media screen and (width > 1200px) {
+    flex-direction:row;
+    .thumbnail-container{
+        width:500px;
+    }
+  }
+  @media screen and (width <= 1200px) {
+    flex-direction:column;
+  }
 }
 
 .thumbnail-container{
@@ -15,15 +42,17 @@
     border-radius:5px;
     margin:10px;
     padding:10px;
-    @media screen and (width < 550px){
-        width:calc(100% - 40px);
-        video{
+    max-width:550px;
+    overflow-x: default;
+
+    @media screen and (width < 750px){
+        video {
             width:100%;
         }
-    }        
-    @media screen and (width >= 550px){
-
-    }         
+        .tech-stack-container{
+            flex-direction: column;
+        }
+    }
 
     &:hover{
         filter:brightness(120%);
@@ -34,7 +63,6 @@
     }
     .tech-stack-container{
         display:flex;
-        flex-direction:row;
         position:absolute;
         right:10px;
         p{

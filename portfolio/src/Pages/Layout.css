@@ -15,23 +15,86 @@
     
     background-color: var(--colour-primary);
     color: var(--colour-text);
+
+
+    display:flex;
+    flex-direction: column;
     /*--colour-text:#0B1C36;*/
     .layout-main{
       display:flex;
+      flex:1;
       .nav-bar{
         background-color: var(--colour-primary-light);
       }
-      @media screen and (width >= 1200px){
+      flex-direction:column;
+      #navigation-list{
         flex-direction:row;
-        #navigation-list{
-          flex-direction:column;
+      }
+    }
+
+    .layout-header{
+      display:flex;
+      @media screen and (orientation: landscape){
+        flex-direction:row;
+        height:fit-content;
+        #header-image-container{
+          width:25vw;
+          height:25vw;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          .header-image {
+            object-fit:contain;
+            height:200%;
+          }
+        }
+        #header-items-container{
+          justify-content: space-between;
+          background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
+          h1{
+            font-size:min(calc(2vw), 36px)
+          }
+          h2{
+            font-size:min(calc(1.5vw), 33px);
+          }
+          h3{
+            font-size:min(calc(1.5vw), 30px);
+            text-align: end;
+            padding: 0px 20px;
+          }
         }
       }
-      @media screen and (width < 1200px){
+      @media screen and (orientation: portrait){
         flex-direction:column;
-        .navigation-list{
-          flex-direction:row;
+        width:100%;
+        #header-image-container{
+          width:100%;
+          height:25vh;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:flex-end;
+          .header-image {
+            object-fit:contain;
+            width:200%;
+            max-width:1000px;
+          }
         }
+        #header-items-container{
+          justify-content: space-between;
+          background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
+          h3{
+            text-align:center;
+            padding: 0px 20px;
+          }
+        }
+      }
+      #header-items-container {
+        flex:2;
       }
     }
   }
@@ -72,9 +135,9 @@ a{
       }
     }
 
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex:1;
     align-items: center;
     justify-content: top;
     font-size: calc(10px + 1vmin);
@@ -166,62 +229,11 @@ header{
   width:100%;
 }
 
-@media screen and (width >= 800px){
-  .header-image-landscape{
-    display:block;
-  }
-  .header-image-portrait{
-    display:none;
-  }
-}
-@media screen and (width < 800px){
-  .header-image-landscape{
-    display:none;
-  }
-  .header-image-portrait{
-    display:block;
-  }
-}
-.header-image-landscape{
-  width:100%;
-  height:auto;
-  margin:0px;
-}
-.header-image-portrait{
-    position:relative;
-  width:100%;
-  height:auto;
-  margin:0px;
-}
-
-#header-items-container{
-  position:absolute;
+.header-items-container{
   display:flex;
   width:100%;
   height:100%;
   @media screen and (width > 800px){
-    justify-content: space-between;
-    flex-direction:row;
-    .text-summary-container{
-      max-width:45%;
-      h1{
-        font-size:calc(1.8vw)
-      }
-      h2{
-        font-size:calc(1.5vw)
-      }
-      h3{
-        font-size:calc(1.2vw)
-      }
-    }
-    .tech-stacks{
-      height:100%;
-      max-width:45%;
-      .tech_stack{
-        height:calc(100% - 60px);
-        max-height:80px;
-      }
-    }
   }
   @media screen and (width <= 800px){
     flex-direction:column;
@@ -248,22 +260,5 @@ header{
   .text-summary-container{
     text-align: left;
     margin:10px;
-  }
-  .tech-stacks{
-    >*{
-      width:100%;
-      height:50%;
-      align-items: center;
-      justify-content:space-around;
-    }
-  }
-  .tech_stack{
-    &:hover{
-      background-color: var(--colour-secondary);
-    }
-    margin:5px;
-    @media screen and (hover:none){
-      background-color: var(--colour-secondary);
-    }
   }
 }
