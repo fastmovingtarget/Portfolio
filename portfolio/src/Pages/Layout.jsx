@@ -16,8 +16,8 @@ function Layout() {
                     <img className="header-image" src={HeaderImage} alt="Target's Header"/>
                 </div>
                 <div id="header-items-container">
-                    <h1>Hi, I'm James Alport</h1>
-                    <h2>I'm a Full Stack Web Developer, currently looking for work.</h2>
+                    <h1>James Alport</h1>
+                    <h2>Full Stack Developer</h2>
                     <h3 className="summary-1">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science.</h3>
                     <h3 className="summary-2">Since then I have worked as a Software Developer at Theorem Solutions before moving on to working on my own projects and personal growth.</h3>
                     <h3><a href={resume} download>Download Resumé ⭳</a></h3>

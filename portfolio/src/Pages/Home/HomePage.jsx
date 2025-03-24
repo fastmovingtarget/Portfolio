@@ -9,8 +9,12 @@ import csharpImage from "../../Images/tech_csharp.png"
 import javaImage from "../../Images/tech_java.png"
 import bbsIngredientsSearch from "../../Videos/BBSIngredientsSearch.mp4"
 import MisacPlay from "../../Videos/MisacPlay.mp4"
+import React, {useState} from "react"
 
 function HomePage () {
+
+    const [clickedTech, setClickedTech] = useState(null)
+
     const projects = [{
         name:"BestBeforeStart",
         videoSource:bbsIngredientsSearch,
@@ -30,37 +34,61 @@ function HomePage () {
     },{
         name:"CADViewer",
         videoSource:null,
-        techStacks:["C++", "C#", ".NET", "OpenInventor"],
+        description:"A program designed to convert CAD files into a viewable format. Eventually folded into a unified UI with an improved process manager.",
+        techStacks:["C++", "C#", ".NET", "C"],
         route:"../Projects/CADViewer/Summary"
     },{
         name:"TPM",
         videoSource:null,
+        description:"A Process Manager built to allow users to track and queue conversions from one CAD format to another.",
         techStacks:["Java", "MySQL"],
         route:"../Projects/TPM/Summary"
     },{
         name:"Masters Project",
         videoSource:null,
+        description:"A program and UI that allows the user to calculate the age of a galaxy based on its spectrum and two control sample spectra using matrix deconvolution.",
         techStacks:["Java"],
         route:"../Projects/MastersProject/Summary"
     }]
 
+    const techStacks = [{
+        name:"React",
+        image:reactImage,
+    },{
+        name:"node.js",
+        image:nodeImage,
+    },{
+        name:"MySQL",
+        image:mysqlImage,
+    },{
+        name:"Azure",
+        image:azureImage,
+    },{
+        name:"C",
+        image:cImage,
+    },{
+        name:"C++",
+        image:cppImage,
+    },{
+        name:"C#",
+        image:csharpImage,
+    },{
+        name:"Java",
+        image:javaImage,
+    }]
 
     return (
-        <div className="page-layout row">          
+        <div className="page-layout row" id="home-page">          
             <div className="tech-stacks column">
-                <h4 className="tech_stack hoverable" alt="Show All Projects" height="80px">All</h4>
-                <img className="tech_stack hoverable" src={reactImage} alt="React logo" height="80px" width="80px"/>
-                <img className="tech_stack hoverable" src={nodeImage} alt="Node logo" height="80px"/>
-                <img className="tech_stack hoverable" src={mysqlImage} alt="MySQL logo" height="80px"/>
-                <img className="tech_stack hoverable" src={azureImage} alt="Azure logo" height="80px"/>
-                <img className="tech_stack hoverable" src={cImage} alt="C logo" height="80px"/>
-                <img className="tech_stack hoverable" src={cppImage} alt="C++ logo" height="80px"/>
-                <img className="tech_stack hoverable" src={csharpImage} alt="C# logo" height="80px"/>
-                <img className="tech_stack hoverable" src={javaImage} alt="Java logo" height="80px"/>
+                <h4 className={`tech_stack hoverable ${!clickedTech ? " clicked" : ""}`} alt="Show All Projects" height="80px" onClick={() => setClickedTech(null)}>All</h4>
+                {techStacks.map((item, index) => 
+                    (<img className={`tech_stack hoverable ${clickedTech && clickedTech.name === item.name ? " clicked" : ""}`} src={item.image} key={`${item.name}-technology`}alt={`${item.name} logo`} height="80px" onClick={() => setClickedTech(item)}/>))
+                }
             </div>
             <div className="projects-container">
                 {
-                    projects.map((project, index) => <ProjectThumbnail key={"home-thumbnail-" + index} project={project}/>)
+                    projects.filter((project) => !clickedTech || project.techStacks.includes(clickedTech.name))
+                        .map((project, index) => <ProjectThumbnail key={"home-thumbnail-" + index} project={project}/>)
                 }
             </div>
         </div>

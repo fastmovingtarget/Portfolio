@@ -1,19 +1,22 @@
-.page-layout{
+.page-layout#home-page{
     --colour-secondary-hover:#221872;
     --colour-secondary:#281D88;
     overflow-x: default;
+    align-items: flex-start;
 }
 
 .tech-stacks{
     align-self:flex-start;
-  height:100%;
-  .tech_stack{
-    height:min(80px, 8vw);
-    width:auto;
-    object-fit:contain;
-    
-  }
-  h4 {
+    height:100%;
+    .tech_stack{
+        height:min(80px, 8vw);
+        width:auto;
+        object-fit:contain;
+        &.clicked{
+            background-color: var(--colour-secondary);
+        }
+    }
+    h4 {
         font-size: min(50px, 5vw);
         text-align: center;
         vertical-align: middle;
@@ -22,7 +25,7 @@
 
 .projects-container{
   height:auto;
-  justify-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex:1;
   display:flex;
@@ -63,8 +66,10 @@
     }
     .tech-stack-container{
         display:flex;
-        position:absolute;
-        right:10px;
+        &.absolute{
+            position:absolute;
+            right:10px;
+        }
         p{
             z-index:3;
             background-color: var(--colour-secondary-hover);

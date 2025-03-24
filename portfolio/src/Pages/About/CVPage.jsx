@@ -114,10 +114,10 @@ function CVComponent() {
                 <h3>Contact Information:</h3>
                 <div className="contact-details-information-container bisected-list">
                     {
-                        Object.keys(data["Contact Information"]).map(key => {
+                        Object.keys(data["Contact Information"]).map((key, index)=> {
                                 if(key === "Portfolio")
-                                    return <p>Portfolio: <a href={data["Contact Information"]["Portfolio"]}>{data["Contact Information"]["Portfolio"]}</a></p>
-                                return <p>{key}: {data["Contact Information"][key]}</p>
+                                    return <p key={index}>Portfolio: <a href={data["Contact Information"]["Portfolio"]}>{data["Contact Information"]["Portfolio"]}</a></p>
+                                return <p key={`info-${index}`}>{key}: {data["Contact Information"][key]}</p>
                             }
                         )
                     }
@@ -126,8 +126,8 @@ function CVComponent() {
             <div className="work-experience-container column hoverable">
                 <h3>Employment History:</h3>
                 {
-                    data["Work Experience"].map(job => 
-                        <div className="job-experience-container">
+                    data["Work Experience"].map((job, index) => 
+                        <div className="job-experience-container" key={`job-exp-${index}`}>
                             <h4>Employer: {job.Employer}, {job.Location}</h4>
                             <p>{job.Title}, {job.Timespan}</p>
                             <h4>Responsibilities: </h4>                        
@@ -151,7 +151,7 @@ function CVComponent() {
                         data["Education"].map((education, index) => {
                             if(index <= 1 || educationMore){
                                 return (
-                                    <li>
+                                    <li key={`education-${index}`}>
                                         <h4>{education.Instutution}, {education.Timespan}: {education.Title}</h4>
                                         <p>Grade: {education.Grade}</p>
                                     </li>
@@ -168,7 +168,7 @@ function CVComponent() {
                 <ul className= "bisected-list">
                     {
                         data["Technical Skills"].map((skill, index) => 
-                            <li>{skill}</li>
+                            <li key={`tech-${index}`}>{skill}</li>
                         )
                     }
                 </ul>
@@ -178,7 +178,7 @@ function CVComponent() {
                 <ul className= "bisected-list">
                     {
                         data["Other Skills"].map((skill, index) => 
-                            <li>{skill}</li>
+                            <li key={`tech-${index}`}>{skill}</li>
                         )
                     }
                 </ul>
@@ -188,7 +188,7 @@ function CVComponent() {
                 <ul>
                     {
                         Object.keys(data["Hobbies and Interests"]).map((interest, index) => 
-                            <li>{interest} 
+                            <li key={`tech-${index}`}>{interest} 
                                 { interestDetails ? 
                                     <ul>
                                         {data["Hobbies and Interests"][interest].map(interestItem => 
