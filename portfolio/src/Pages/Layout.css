@@ -33,11 +33,19 @@
     }
 
     .layout-header{
+      
       display:flex;
       @media screen and (orientation: landscape){
         flex-direction:row;
         height:fit-content;
-        #header-image-container{
+      }
+      @media screen and (orientation: portrait){
+        flex-direction:column;
+        width:100%;
+      }
+      
+      #header-image-container{
+        @media screen and (orientation: landscape){
           width:25vw;
           height:25vw;
           overflow-x: hidden;
@@ -50,10 +58,33 @@
             height:200%;
           }
         }
-        #header-items-container{
+        @media screen and (orientation: portrait){
+          width:100%;
+          height:20vh;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:flex-end;
+          .header-image {
+            object-fit:contain;
+            width:100%;
+            max-width:1000px;
+          }
+        }
+      }
+
+      #header-items-container{
+        flex:2;
+        @media screen and (orientation: landscape){
           justify-content: space-between;
           background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
           h1{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
             font-size:min(calc(2vw), 36px)
           }
           h2{
@@ -64,7 +95,7 @@
             text-align: end;
             padding: 0px 20px;
           }
-          .mobile{
+          .small{
             @media screen and (width <= 800px){
               display:flex;
               flex-direction:column;
@@ -87,26 +118,7 @@
             }
           }
         }
-      }
-      @media screen and (orientation: portrait){
-        flex-direction:column;
-        width:100%;
-        #header-image-container{
-          width:100%;
-          height:20vh;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content:flex-end;
-          .header-image {
-            object-fit:contain;
-            width:100%;
-            max-width:1000px;
-          }
-        }
-        #header-items-container{
+        @media screen and (orientation: portrait){
           justify-content: space-between;
           background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
           h3{
@@ -123,7 +135,7 @@
           h2{
             margin:12px 0px;
           }
-          .mobile{
+          .small{
             @media screen and (width <= 800px){
               display:flex;
               flex-direction:column;
@@ -148,9 +160,7 @@
           }
         }
       }
-      #header-items-container {
-        flex:2;
-      }
+
     }
   }
 
