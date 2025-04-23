@@ -19,36 +19,36 @@ function HomePage () {
         name:"BestBeforeStart",
         videoSource:bbsIngredientsSearch,
         techStacks:["React", "MySQL", "node.js", "Azure", "JavaScript"],
-        route:"../Projects/RecipeProject/Summary"
+        route:"../Home/Projects/RecipeProject/Summary"
     },{
         name:"Misac",
         videoSource:MisacPlay,
         techStacks:["React", "HTML5", "CSS", "JavaScript"],
-        route:"../Projects/MisacProject/Summary"
+        route:"../Home/Projects/MisacProject/Summary"
     },{
         name:"MyFracture",
         videoSource:null,
         description:"An NHS funded project for Android and IOS intended to help patients navigate through injuries post-surgery.",
         techStacks:["Meteor", "MongoDB", "node.js", "CSS", "JavaScript"],
-        route:"../Projects/MyFracture/Summary"
+        route:"../Home/Projects/MyFracture/Summary"
     },{
         name:"CADViewer",
         videoSource:null,
         description:"A program designed to convert CAD files into a viewable format. Eventually folded into a unified UI with an improved process manager.",
         techStacks:["C++", "C#", ".NET", "C"],
-        route:"../Projects/CADViewer/Summary"
+        route:"../Home/Projects/CADViewer/Summary"
     },{
         name:"TPM",
         videoSource:null,
         description:"A Process Manager built to allow users to track and queue conversions from one CAD format to another.",
         techStacks:["Java", "MySQL"],
-        route:"../Projects/TPM/Summary"
+        route:"../Home/Projects/TPM/Summary"
     },{
         name:"Masters Project",
         videoSource:null,
         description:"A program and UI that allows the user to calculate the age of a galaxy based on its spectrum and two control sample spectra using matrix deconvolution.",
         techStacks:["Java"],
-        route:"../Projects/MastersProject/Summary"
+        route:"../Home/Projects/MastersProject/Summary"
     }]
 
     const techStacks = [{
