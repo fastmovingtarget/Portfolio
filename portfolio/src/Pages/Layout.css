@@ -77,6 +77,30 @@
 
       #header-items-container{
         flex:2;
+        
+        @media screen and (max-width : 799px){
+          .small{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+          }
+          .large{
+            display:none;
+          }
+        }
+        @media screen and (min-width : 800px){
+          .small{
+            display:none;
+          }
+          .large{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
         @media screen and (orientation: landscape){
           justify-content: space-between;
           background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
@@ -95,28 +119,6 @@
             text-align: end;
             padding: 0px 20px;
           }
-          .small{
-            @media screen and (max-width : 799px){
-              display:flex;
-              flex-direction:column;
-              justify-content: center;
-              align-items: center;
-            }
-            @media screen and (min-width : 800px){
-              display:none;
-            }
-          }
-          .large{
-            @media screen and (min-width : 800px){
-              display:flex;
-              flex-direction:column;
-              justify-content: center;
-              align-items: center;
-            }
-            @media screen and (max-width : 799px){
-              display:none;
-            }
-          }
         }
         @media screen and (orientation: portrait){
           justify-content: space-between;
@@ -134,29 +136,6 @@
           }
           h2{
             margin:12px 0px;
-          }
-          .small{
-            @media screen and (width <= 800px){
-              display:flex;
-              flex-direction:column;
-              justify-content: center;
-              align-items: center;
-              margin:10px;
-            }
-            @media screen and (width > 800px){
-              display:none;
-            }
-          }
-          .large{
-            @media screen and (width >= 800px){
-              display:flex;
-              flex-direction:column;
-              justify-content: center;
-              align-items: center;
-            }
-            @media screen and (width < 800px){
-              display:none;
-            }
           }
         }
       }
