@@ -21,9 +21,6 @@ function Layout() {
                     <h1 className="nameplate small">James Alport, MSc, BSc </h1>
                     <h2>Full Stack Developer</h2>
                     <h3 className="summary 1 large">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science.</h3>
-                    <h3 className="summary 2 large">Since then I have worked as a Software Developer at Theorem Solutions before moving on to working on my own projects and personal growth.</h3>
-                    <h3 className="summary small">Software Developer, Theorem Solutions</h3>
-                    <h3 className="summary small">Web and Mobile App Developer and Co-Founder, Seedhack</h3>
                     <h3><a href={resume} download>Download Resumé ⭳</a></h3>
                 </div>
             </header>
