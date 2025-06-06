@@ -4,7 +4,6 @@ import "./Layout.css"
 //import HeaderImage from "../Images/Header.png"
 //import HeaderImagePortrait from "../Images/HeaderPortrait.png"
 import HeaderImage from "../Images/SharpPortfolio1000x1000.png"
-import resume from "../Resources/James Alport Resume 20250203.pdf"
 
 function Layout() {
     const navigate = useNavigate();
@@ -21,7 +20,6 @@ function Layout() {
                     <h1 className="nameplate small">James Alport, MSc, BSc </h1>
                     <h2>Full Stack Developer</h2>
                     <h3 className="summary 1 large">I graduated with from the University of Birmingham with a Batchelors Degree in Physics and a Masters Degree in Computer Science.</h3>
-                    <h3><a href={resume} download>Download Resumé ⭳</a></h3>
                 </div>
             </header>
             <div className="layout-main">
