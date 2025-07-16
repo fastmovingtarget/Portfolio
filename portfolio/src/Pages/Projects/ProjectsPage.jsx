@@ -10,7 +10,8 @@ export default function ProjectsPage () {
                 <ul>
                     <li>Recipe Web App - Initial Deployment</li>
                     <li>Music Notation Learning Web App</li>
-                    <li>Portfolio Web Site Template</li>
+                    <li>Music Notation Learning App - React Native</li>
+                    <li>Portfolio Web Site</li>
                 </ul>
             </div>
             <div>
@@ -18,7 +19,7 @@ export default function ProjectsPage () {
                 <ul>
                     <li>Recipe App - React Native</li>
                     <li>Recipe App - .NET Core API</li>
-                    <li>Music Notation Learning App - React Native</li>
+                    <li>Snacker Tracker - React Native</li>
                 </ul>
             </div>
             <div>
