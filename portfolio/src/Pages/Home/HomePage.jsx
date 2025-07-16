@@ -1,5 +1,6 @@
 import ProjectThumbnail from "./ProjectThumbnail"
 import reactImage from "../../Images/tech_react.png"
+import reactNativeImage from "../../Images/tech_native.png"
 import nodeImage from "../../Images/tech_node.png"
 import mysqlImage from "../../Images/tech_mysql.png"
 import azureImage from "../../Images/tech_azure.png"
@@ -18,12 +19,12 @@ function HomePage () {
     const projects = [{
         name:"BestBeforeStart",
         videoSource:bbsIngredientsSearch,
-        techStacks:["React", "MySQL", "node.js", "Azure", "JavaScript"],
+        techStacks:["React Native", "React", "MySQL", "node.js", "Azure", "JavaScript"],
         route:"../Home/Projects/RecipeProject/Summary"
     },{
         name:"Misac",
         videoSource:MisacPlay,
-        techStacks:["React", "HTML5", "CSS", "JavaScript"],
+        techStacks:["React Native", "React", "HTML5", "CSS", "JavaScript"],
         route:"../Home/Projects/MisacProject/Summary"
     },{
         name:"MyFracture",
@@ -52,6 +53,9 @@ function HomePage () {
     }]
 
     const techStacks = [{
+        name:"React Native",
+        image:reactNativeImage,
+    },{
         name:"React",
         image:reactImage,
     },{
