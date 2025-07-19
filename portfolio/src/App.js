@@ -3,11 +3,6 @@ import { HashRouter, Routes, Route } from "react-router";
 import HomePage from "./Pages/Home/HomePage"
 import CVPage from "./Pages/About/CVPage"
 import ProjectsPage from "./Pages/Projects/ProjectsPage"
-import University from "./Pages/About/University"
-import Employment from "./Pages/About/Employment"
-import Unemployment from "./Pages/About/Unemployment"
-import Retraining from "./Pages/About/Retraining"
-import Hobbies from "./Pages/About/Hobbies"
 import RecipeProjectThoughts from './Pages/Projects/RecipeProject/RecipeProjectThoughts';
 import RecipeProjectFeatures from './Pages/Projects/RecipeProject/RecipeProjectFeatures';
 import RecipeProjectSummary from './Pages/Projects/RecipeProject/RecipeProjectSummary';
@@ -28,11 +23,6 @@ function App() {
                             <Route index element={<HomePage/>} />
                             <Route path="About">
                                 <Route index element={<CVPage/>} />
-                                <Route path="University" element={<University/>}/>
-                                <Route path="Employment" element={<Employment/>}/>
-                                <Route path="Unemployment" element={<Unemployment/>}/>
-                                <Route path="Retraining" element={<Retraining/>}/>
-                                <Route path="Hobbies" element={<Hobbies/>}/>
                             </Route>
                             <Route path="Projects">
                                 <Route index element={<ProjectsPage />}/>
