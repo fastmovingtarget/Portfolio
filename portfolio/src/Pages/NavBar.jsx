@@ -1,8 +1,15 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
-export default function NavBar({navigate, location = "/Home"}) {
+export default function NavBar({navigate}) {
+    const location = useLocation();
+    const [currentPage, setCurrentPage] = useState(location.pathname === "/" ? "/Home" : location.pathname);// Initialize currentPage based on the current location
+    // If the current location is "/", set currentPage to "/Home" to match the Home route
+    
+    useEffect(() => {
+        setCurrentPage(location.pathname === "/" ? "/Home" : location.pathname);
+    }, [location]);
 
-    const [currentPage, setCurrentPage] = useState(location);
 
     const pages = [
         { name: "Home", path: "/Home"},
@@ -14,11 +21,6 @@ export default function NavBar({navigate, location = "/Home"}) {
         { name: "Thoughts", path: "/Home/Projects/MisacProject/Thoughts" },
         { name: "Features", path: "/Home/Projects/MisacProject/Features" },
         { name: "About Me", path: "/Home/About"},
-        { name: "University", path: "/Home/About/University" },
-        { name: "Employment", path: "/Home/About/Employment" },
-        { name: "Unemployment", path: "/Home/About/Unemployment" },
-        { name: "Retraining", path: "/Home/About/Retraining" },
-        { name: "Hobbies", path: "/Home/About/Hobbies" },
     ]
 
     // Specifies the class name of the nav element based on the current page and the path of the element
@@ -41,7 +43,7 @@ export default function NavBar({navigate, location = "/Home"}) {
     // we want to set the current page within NavBar state to ensure that it re-renders when the page changes
     const navigateHandler = (path) => {
         if(getClassName(path) === "nav-element hidden") 
-            return
+            return;
 
         setCurrentPage(path);
         navigate(path);
