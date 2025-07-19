@@ -10,7 +10,8 @@ function CVComponent() {
         "Contact Information":{
             "E-mail":"jrmalport@gmail.com",
             "Location":"Horsham, West Sussex",
-            "Portfolio":"https://fastmovingtarget.github.io/Portfolio/"
+            "Github":"https://fastmovingtarget.github.io",
+            "LinkedIn":"www.linkedin.com/in/james-alport-254bb7143",
         },
         "Work Experience":[{
                 "Employer":"Seedhack",
@@ -110,7 +111,7 @@ function CVComponent() {
 
     return (
         <div className="cv-container column ">
-            <div className="contact-details-container column hoverable">
+            <div className="contact-details-container column hoverable cv-section">
                 <h3>Contact Information:</h3>
                 <div className="contact-details-information-container bisected-list">
                     {
@@ -123,7 +124,7 @@ function CVComponent() {
                     }
                 </div>
             </div>
-            <div className="work-experience-container column hoverable">
+            <div className="work-experience-container column hoverable cv-section">
                 <h3>Employment History:</h3>
                 {
                     data["Work Experience"].map((job, index) => 
@@ -133,8 +134,8 @@ function CVComponent() {
                             <h4>Responsibilities: </h4>                        
                             <ul className= "bisected-list">
                                 {
-                                    job.Responsibilities.map(resp => 
-                                        <li>
+                                    job.Responsibilities.map((resp, i) => 
+                                        <li key={"resp-" + i}>
                                             {resp}
                                         </li>
                                     )
@@ -144,7 +145,7 @@ function CVComponent() {
                     )
                 }
             </div>
-            <div className="education-container column hoverable">
+            <div className="education-container column hoverable cv-section">
                 <h3>Education:</h3>
                 <ul className= "bisected-list">
                     {
@@ -163,7 +164,7 @@ function CVComponent() {
                 </ul>
                 <span onClick={() => setEducationMore(!educationMore)}>{!educationMore ? "See More..." : "See Less..."}</span>
             </div>
-            <div className="tech-skills-container column hoverable">
+            <div className="tech-skills-container column hoverable cv-section">
                 <h3>Technical Skills</h3>
                 <ul className= "bisected-list">
                     {
@@ -173,7 +174,7 @@ function CVComponent() {
                     }
                 </ul>
             </div>
-            <div className="other-skills-container column hoverable">
+            <div className="other-skills-container column hoverable cv-section">
                 <h3>Other Skills:</h3>
                 <ul className= "bisected-list">
                     {
@@ -183,9 +184,9 @@ function CVComponent() {
                     }
                 </ul>
             </div>
-            <div className="interests-container column hoverable">
+            <div className="interests-container column hoverable cv-section">
                 <h3>Interests:</h3>
-                <ul>
+                <ul className= {interestDetails ? "" :"bisected-list"}>
                     {
                         Object.keys(data["Hobbies and Interests"]).map((interest, index) => 
                             <li key={`tech-${index}`}>{interest} 
@@ -200,8 +201,8 @@ function CVComponent() {
                             </li>
                         )
                     }
-                    <span onClick={() => setInterestDetails(!interestDetails)}>{!interestDetails ? "See Details" : "Hide Details"}</span>
                 </ul>
+                <span onClick={() => setInterestDetails(!interestDetails)}>{!interestDetails ? "See Details..." : "Hide Details..."}</span>
             </div>
 
         </div>

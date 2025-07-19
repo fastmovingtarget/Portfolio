@@ -45,5 +45,14 @@
             }
         }
     }
+    span {
+        color: var(--colour-text);
+        width:100%;
+        text-align: center;
+    }
+    .cv-section {
+        width:calc(100% - 40px);
+        margin: 5px 10px;
+    }
 
 }
