@@ -2,7 +2,7 @@
 A website to give my background and currently extant projects
 
 ## Current Domain:
-[jrmalport.co.uk](jrmalport.co.uk)
+[jrmalport.co.uk](https://jrmalport.co.uk)
 
 ## Techs
 - React, CSS, HTML
