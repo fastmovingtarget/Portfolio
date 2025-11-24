@@ -24,7 +24,7 @@ export default function ProjectsPage () {
             </div>
             <div>
                 <h4>My GitHub:</h4>
-                <a className="hyperlink" href="https://github.com/fastmovingtarget">https://github.com/fastmovingtarget</a>
+                <a className="hyperlink" href="https://github.com/fastmovingtarget" rel="noopener noreferrer" target="_blank">https://github.com/fastmovingtarget</a>
             </div>
         </div>
     )

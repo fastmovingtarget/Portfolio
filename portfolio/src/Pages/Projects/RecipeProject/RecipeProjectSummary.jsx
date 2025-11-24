@@ -4,8 +4,8 @@ export default function RecipeProjectSummary () {
             <h3>Recipe Project: "BestBeforeStart" Summary</h3>
 
             <h4>The final product:</h4>
-            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/BestBeforeAzure">Github Repository</a></li>
-            <li className="hoverable"><a className="hyperlink" href="https://bestbeforerecipes.fastmovingtarget.co.uk/">Implemented web page</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/BestBeforeAzure" rel="noopener noreferrer" target="_blank">Github Repository</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://bestbeforerecipes.fastmovingtarget.co.uk/" rel="noopener noreferrer" target="_blank">Implemented web page</a></li>
             
             <div className="hoverable">
                 <ul>

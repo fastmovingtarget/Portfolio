@@ -4,8 +4,8 @@ export default function MisacProjectSummary () {
             <h3>Music Project: "Misac" Summary</h3>
 
             <h4>The final product:</h4>
-            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/Misac">Github Repository</a></li>
-            <li className="hoverable"><a className="hyperlink" href="https://fastmovingtarget.github.io/misac/">Implemented web page</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://github.com/fastmovingtarget/Misac" rel="noopener noreferrer" target="_blank">Github Repository</a></li>
+            <li className="hoverable"><a className="hyperlink" href="https://fastmovingtarget.github.io/misac/" rel="noopener noreferrer" target="_blank">Implemented web page</a></li>
             
             <div className="hoverable">
                 <ul>

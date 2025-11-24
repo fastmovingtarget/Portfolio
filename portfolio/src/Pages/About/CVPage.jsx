@@ -10,7 +10,7 @@ function CVComponent() {
         "Contact Information":{
             "E-mail":"jrmalport@gmail.com",
             "Location":"Horsham, West Sussex",
-            "Github":"https://fastmovingtarget.github.io",
+            "GitHub":"https://fastmovingtarget.github.io",
             "LinkedIn":"www.linkedin.com/in/james-alport-254bb7143",
         },
         "Work Experience":[{
@@ -117,7 +117,11 @@ function CVComponent() {
                     {
                         Object.keys(data["Contact Information"]).map((key, index)=> {
                                 if(key === "Portfolio")
-                                    return <p key={index}>Portfolio: <a href={data["Contact Information"]["Portfolio"]}>{data["Contact Information"]["Portfolio"]}</a></p>
+                                    return <p key={index}>Portfolio: <a href={data["Contact Information"]["Portfolio"]} rel="noopener noreferrer" target="_blank">{data["Contact Information"]["Portfolio"]}</a></p>
+                                else if(key === "GitHub")
+                                    return <p key={index}>GitHub: <a href={data["Contact Information"]["GitHub"]} rel="noopener noreferrer" target="_blank">{data["Contact Information"]["GitHub"]}</a></p>
+                                else if(key === "LinkedIn")
+                                    return <p key={index}>LinkedIn: <a href={data["Contact Information"]["LinkedIn"]} rel="noopener noreferrer" target="_blank">{data["Contact Information"]["LinkedIn"]}</a></p>
                                 return <p key={`info-${index}`}>{key}: {data["Contact Information"][key]}</p>
                             }
                         )
