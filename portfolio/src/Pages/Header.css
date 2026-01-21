@@ -1,0 +1,117 @@
+.layout-header{
+    
+    display:flex;
+    @media screen and (orientation: landscape){
+    flex-direction:row;
+    height:fit-content;
+    }
+    @media screen and (orientation: portrait){
+    flex-direction:column;
+    width:100%;
+    }
+    
+    #header-image-container{
+        @media screen and (orientation: landscape){
+            width:25vw;
+            height:25vw;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .header-image {
+            object-fit:contain;
+            height:200%;
+            }
+        }
+        @media screen and (orientation: portrait){
+            width:100%;
+            height:20vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:flex-end;
+            .header-image {
+            object-fit:contain;
+            width:100%;
+            max-width:1000px;
+            }
+        }
+    }
+
+    #header-items-container{
+    flex:2;
+    
+    @media screen and (max-width : 799px){
+        .small{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        }
+        .large{
+        display:none;
+        }
+    }
+    @media screen and (min-width : 800px){
+        .small{
+        display:none;
+        }
+        .large{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+    @media screen and (orientation: landscape){
+        justify-content: space-between;
+        background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
+        h1{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size:min(calc(2vw), 36px)
+        }
+        h2{
+        font-size:min(calc(1.5vw), 33px);
+        }
+        h3{
+        font-size:min(calc(1.5vw), 30px);
+        text-align: end;
+        padding: 0px 20px;
+        }
+    }
+    @media screen and (orientation: portrait){
+        justify-content: space-between;
+        background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
+        h3{
+        text-align:center;
+        padding: 0px 20px;
+        }
+        h1{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:12px 0px;
+        }
+        h2{
+        margin:12px 0px;
+        }
+    }
+  }
+}
+.layout-header{
+  background-color: var(--colour-primary-light);
+  position:relative;
+  max-height:70vh;
+  overflow:hidden;
+}
+header{
+  width:100%;
+}
