@@ -1,113 +1,168 @@
+
+@keyframes gradient-background-horizontal {
+    0% {
+        background-position: 50% center;
+    }
+    25% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 50% center;
+    }
+    75% {
+        background-position: 100% center;
+    }
+    0%, 100% {
+        background-position: 50% center;
+    }
+}
+
 .layout-header{
+
+    @media screen and (orientation: landscape){
+        background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
+        animation-name: gradient-background-horizontal;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        background-size: 200% auto;
+    }
+    @media screen and (orientation: portrait){
+        background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
+    }
     
     display:flex;
     @media screen and (orientation: landscape){
-    flex-direction:row;
-    height:fit-content;
+        flex-direction:row;
+        height:fit-content;
     }
     @media screen and (orientation: portrait){
-    flex-direction:column;
-    width:100%;
+        flex-direction:column;
+        width:100%;
     }
     
     #header-image-container{
         @media screen and (orientation: landscape){
-            width:25vw;
-            height:25vw;
+            &.purple{
+                width:30vw;
+                height:15vw;
+                .header-image.purple{
+                    object-fit:contain;
+                    height:300%;
+                    z-index: 0;
+                }
+            }
+            &.blue{
+                width:15vw;
+                height:15vw;
+                position:absolute;
+                .header-image.blue{
+                    object-fit:contain;
+                    height:150%;
+                }
+            }
             overflow-x: hidden;
             overflow-y: hidden;
             display: flex;
             align-items: center;
             justify-content: end;
-            .header-image {
-            object-fit:contain;
-            height:200%;
-            }
+            
         }
         @media screen and (orientation: portrait){
             width:100%;
             height:20vh;
+            &.purple{
+                height:30vw;
+                .header-image.purple{
+                    object-fit:contain;
+                    height:400%;
+                    z-index: 0;
+                }
+            }
+            &.blue{
+                height:15vw;
+                position:absolute;
+                .header-image.blue{
+                    object-fit:contain;
+                    height:200%;
+                }
+            }
             overflow-x: hidden;
             overflow-y: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content:flex-end;
-            .header-image {
-            object-fit:contain;
-            width:100%;
-            max-width:1000px;
-            }
         }
     }
 
     #header-items-container{
-    flex:2;
+        flex:2;
     
-    @media screen and (max-width : 799px){
-        .small{
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        @media screen and (max-width : 799px){
+            .small{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+            .large{
+                display:none;
+            }
         }
-        .large{
-        display:none;
+        @media screen and (min-width : 800px){
+            .small{
+                display:none;
+            }
+            .large{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: flex-end;
+            }
         }
-    }
-    @media screen and (min-width : 800px){
-        .small{
-        display:none;
-        }
-        .large{
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        }
-    }
 
-    @media screen and (orientation: landscape){
-        justify-content: space-between;
-        background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
-        h1{
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size:min(calc(2vw), 36px)
+        @media screen and (orientation: landscape){
+            justify-content: space-between;
+            h1{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size:min(calc(3vw), 36px);
+                padding: 0px 20px;
+                margin:12px 0px;
+            }
+            h2{
+                font-size:min(calc(2vw), 33px);
+                padding: 0px 20px;
+                margin:12px 0px;
+            }
+            h3{
+                font-size:min(calc(2vw), 30px);
+                text-align: end;
+                padding: 0px 20px;
+                margin:12px 0px;
+            }
         }
-        h2{
-        font-size:min(calc(1.5vw), 33px);
-        }
-        h3{
-        font-size:min(calc(1.5vw), 30px);
-        text-align: end;
-        padding: 0px 20px;
+        @media screen and (orientation: portrait){
+            justify-content: space-between;
+            h3{
+                text-align:center;
+                padding: 0px 20px;
+            }
+            h1{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin:12px 0px;
+            }
+            h2{
+                margin:12px 0px;
+            }
         }
     }
-    @media screen and (orientation: portrait){
-        justify-content: space-between;
-        background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
-        h3{
-        text-align:center;
-        padding: 0px 20px;
-        }
-        h1{
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin:12px 0px;
-        }
-        h2{
-        margin:12px 0px;
-        }
-    }
-  }
 }
 .layout-header{
-  background-color: var(--colour-primary-light);
   position:relative;
   max-height:70vh;
   overflow:hidden;
