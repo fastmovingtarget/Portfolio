@@ -8,12 +8,18 @@
 .tech-stacks{
     align-self:flex-start;
     height:100%;
+    width:auto;
     .tech_stack{
         height:min(80px, 8vw);
-        width:auto;
+        margin:5px;
+        padding: 5px;
+        width:calc(100% - 20px);
         object-fit:contain;
+        flex-grow: 1;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
         &.clicked{
             background-color: var(--colour-secondary);
+            box-shadow: 0 0 0 rgba(0,0,0,0);
         }
     }
     h4 {
