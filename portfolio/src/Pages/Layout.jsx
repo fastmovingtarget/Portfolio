@@ -2,6 +2,7 @@ import { Outlet, useNavigate } from "react-router";
 import NavBar from "./NavBar";
 import "./Layout.css"
 import Header from "./Header";
+import Content from "./Content";
 //import HeaderImage from "../Images/Header.png"
 //import HeaderImagePortrait from "../Images/HeaderPortrait.png"
 
@@ -13,7 +14,7 @@ function Layout() {
             <Header />
             <div className="layout-main">
                 <NavBar navigate={navigate}/>
-                <Outlet />
+                <Content />
             </div>
         </div>
     );
