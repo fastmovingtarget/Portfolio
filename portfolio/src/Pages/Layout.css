@@ -1,36 +1,37 @@
 .Layout {
-  text-align: center;
-  --colour-primary-light  :#3D79D6;
-  --colour-secondary-light:#4D3DD6;
-  --colour-tertiary-light: #3DC6D6;
-  --colour-primary-intermed:#2459AB;
-  --colour-primary:  #1D4788;
-  --colour-secondary:#281D88;
-  --colour-tertiary: #1D7D88;
-  --colour-primary-hover:  #183C72;
-  --colour-secondary-hover:#221872;
-  --colour-tertiary-hover: #186972;
-  --colour-text:#aaccff;
-  --body-padding:20px;
-  
-  background-color: var(--colour-primary);
-  color: var(--colour-text);
+    text-align: center;
+    --colour-primary-light  :#3D79D6;
+    --colour-secondary-light:#4D3DD6;
+    --colour-tertiary-light: #3DC6D6;
+    --colour-primary-intermed:#2459AB;
+    --colour-primary:  #1D4788;
+    --colour-secondary:#281D88;
+    --colour-tertiary: #1D7D88;
+    --colour-primary-hover:  #183C72;
+    --colour-secondary-hover:#221872;
+    --colour-tertiary-hover: #186972;
+    --colour-text:#aaccff;
+    --body-padding:20px;
+    
+    background-color: var(--colour-primary);
+    color: var(--colour-text);
 
 
-  display:flex;
-  flex-direction: column;
-  /*--colour-text:#0B1C36;*/
-  .layout-main{
     display:flex;
-    flex:1;
-    .nav-bar{
-      background-color: var(--colour-primary-light);
+    flex-direction: column;
+    /*--colour-text:#0B1C36;*/
+    .layout-main{
+        display:flex;
+        flex:1;
+        .nav-bar{
+            background-color: var(--colour-primary);
+            width:100%;
+        }
+        flex-direction:column;
+        #navigation-list{
+            flex-direction:row;
+        }
     }
-    flex-direction:column;
-    #navigation-list{
-      flex-direction:row;
-    }
-  }
 }
 
 a{
@@ -126,11 +127,12 @@ h4{
   overflow-x:auto;
   scrollbar-width: thin;
   .nav-element{
+    border-right : 2px solid var(--colour-primary-hover);
     padding:10px;
     color: #aaccff;
     @media screen and (hover:none){
-      border-top:var(--colour-primary) 1px solid;
-      border-right:var(--colour-primary) 1px solid;
+      border-top:var(--colour-primary-hover) 1px solid;
+      border-right:var(--colour-primary-hover) 2px solid;
     }
     &.active{
         background-color:var(--colour-primary);
@@ -141,11 +143,13 @@ h4{
     }
     &.visible{
       opacity:100%;
-      transition: opacity 0.3s linear, width 0.3s linear, padding 0.3s linear, margin 0.3s linear;
+      transition: padding 0.3s linear;
       &:hover{
         background-color:var(--colour-primary-hover);
         cursor:pointer;
       }
+      box-shadow: 2px 2px 5px rgba(0,0,100,0.3);
+      background-color: var(--colour-primary-light);
     }
     &.hidden{
       width:0px;
