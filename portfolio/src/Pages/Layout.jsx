@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import NavBar from "./NavBar";
 import "./Layout.css"
 import Header from "./Header";
