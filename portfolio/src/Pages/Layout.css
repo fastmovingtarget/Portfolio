@@ -11,6 +11,8 @@
     --colour-secondary-hover:#221872;
     --colour-tertiary-hover: #186972;
     --colour-text:#aaccff;
+    --colour-text-secondary:#ddddff;
+    --header-font: 'Papyrus', serif;
     --body-padding:20px;
     
     background-color: var(--colour-primary);
@@ -23,6 +25,7 @@
     .layout-main{
         display:flex;
         flex:1;
+        width:100%;
         .nav-bar{
             background-color: var(--colour-primary);
             width:100%;
