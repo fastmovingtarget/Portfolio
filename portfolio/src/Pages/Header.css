@@ -17,31 +17,17 @@
     }
 }
 
-.layout-header{
-
-    @media screen and (orientation: landscape){
+@media screen and (width >= 700px) {
+    .layout-header{
         background: linear-gradient(to right, var(--colour-primary-light), var(--colour-primary));
         animation-name: gradient-background-horizontal;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         background-size: 200% auto;
-    }
-    @media screen and (orientation: portrait){
-        background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
-    }
-    
-    display:flex;
-    @media screen and (orientation: landscape){
         flex-direction:row;
         height:fit-content;
-    }
-    @media screen and (orientation: portrait){
-        flex-direction:column;
-        width:100%;
-    }
-    
-    #header-image-container{
-        @media screen and (orientation: landscape){
+
+        #header-image-container{
             &.purple{
                 width:30vw;
                 height:15vw;
@@ -65,13 +51,61 @@
             display: flex;
             align-items: center;
             justify-content: end;
-            
         }
-        @media screen and (orientation: portrait){
+        #header-items-container{
+            font-family:var(--header-font);
+            .small{
+                display:none;
+            }
+            .large{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            justify-content: space-between;
+            h1{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                /*Font Size Calculations!
+                Height of the available space is based on 15% of Viewport WIDTH...so 15vw.
+                Padding is 12px each (6px top and bottom for all 3 texts).
+                so spreading evenly for 3 texts means each text has 5vw - 12px height.
+                */
+                font-size:calc((6vw - min(12px, 1vw))/1.15);
+                padding: min(6px, 0.5vw) 20px;
+                margin: 0px;
+                color:var(--colour-text-secondary);
+            }
+            h2{
+                font-size:calc((4vw - min(12px, 1vw))/1.15);
+                padding: min(6px, 0.5vw) 20px;
+                margin:0px;
+            }
+            h3{
+                font-size:calc((3vw - min(12px, 1vw))/1.15);
+                text-align: end;
+                padding: min(6px, 0.5vw) 20px;
+                margin:0px;
+            }
+        }
+    }
+}
+
+@media screen and (width < 700px) {
+    .layout-header{
+        background: linear-gradient(to bottom, var(--colour-primary-light), var(--colour-primary));
+        flex-direction:column;
+        width:100%;
+        height:25vh;
+
+        #header-image-container{
             width:100%;
             height:20vh;
             &.purple{
-                height:30vw;
+                height:max(20vh, 50vw);
+                position:absolute;
                 .header-image.purple{
                     object-fit:contain;
                     height:400%;
@@ -79,7 +113,7 @@
                 }
             }
             &.blue{
-                height:15vw;
+                height:max(10vh, 25vw);
                 position:absolute;
                 .header-image.blue{
                     object-fit:contain;
@@ -93,12 +127,10 @@
             align-items: center;
             justify-content:flex-end;
         }
-    }
-
-    #header-items-container{
-        flex:2;
-    
-        @media screen and (max-width : 799px){
+        #header-items-container{
+            position: absolute;
+            bottom : 0;
+            width:100%;
             .small{
                 display:flex;
                 flex-direction:column;
@@ -108,42 +140,6 @@
             .large{
                 display:none;
             }
-        }
-        @media screen and (min-width : 800px){
-            .small{
-                display:none;
-            }
-            .large{
-                display:flex;
-                flex-direction:column;
-                justify-content: center;
-                align-items: flex-end;
-            }
-        }
-
-        @media screen and (orientation: landscape){
-            justify-content: space-between;
-            h1{
-                display:flex;
-                flex-direction: row;
-                justify-content: center;
-                font-size:min(calc(3vw), 36px);
-                padding: 0px 20px;
-                margin:12px 0px;
-            }
-            h2{
-                font-size:min(calc(2vw), 33px);
-                padding: 0px 20px;
-                margin:12px 0px;
-            }
-            h3{
-                font-size:min(calc(2vw), 30px);
-                text-align: end;
-                padding: 0px 20px;
-                margin:12px 0px;
-            }
-        }
-        @media screen and (orientation: portrait){
             justify-content: space-between;
             h3{
                 text-align:center;
@@ -155,11 +151,21 @@
                 align-items: center;
                 justify-content: center;
                 margin:12px 0px;
+                color:var(--colour-text-secondary);
+                font-size: min(calc(6vw), 36px);
+                font-family:var(--header-font);
             }
             h2{
                 margin:12px 0px;
             }
         }
+    }
+}
+
+.layout-header{    
+    display:flex;    
+    #header-items-container{
+        flex:2;    
     }
 }
 .layout-header{
