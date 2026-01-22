@@ -43,6 +43,8 @@
   }
   @media screen and (width <= 1200px) {
     flex-direction:column;
+    width:100%;
+    align-items: center;
   }
 }
 
@@ -55,11 +57,13 @@
     overflow-x: default;
 
     @media screen and (width < 750px){
+        overflow-y: hidden;
         video {
             width:100%;
         }
         .tech-stack-container{
             flex-direction: column;
+            align-items: flex-end;
         }
     }
 
