@@ -43,8 +43,8 @@
   }
   @media screen and (width <= 1200px) {
     flex-direction:column;
-    width:100%;
     align-items: center;
+    
   }
 }
 
