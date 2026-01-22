@@ -21,7 +21,7 @@ export default function Content() {
     }, [targetOpacity, currentOpacity]);
 
     return (
-        <div style={{opacity: currentOpacity}}>
+        <div style={{opacity: currentOpacity, width: '100%'}}>
             <Outlet/>
         </div>
     );
