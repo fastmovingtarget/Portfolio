@@ -12,7 +12,7 @@
     --colour-tertiary-hover: #186972;
     --colour-text:#aaccff;
     --colour-text-secondary:#ddddff;
-    --header-font: 'Papyrus', serif;
+    --header-font: "Playfair Display", serif;
     --body-padding:20px;
     
     background-color: var(--colour-primary);
